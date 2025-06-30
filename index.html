@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibreOS</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    
+      <!-- start header-->
+      <div class="header">
+        <div class="left">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="LibreOSlogo" class="logoSvg" />
+          </div>
+          <div class="name">LibreMobileOS</div>
+        </div>
+        <div class="right">
+          <div class="menu">
+            <div class="submenuItems">Home</div>
+            <div class="submenuItems">About</div>
+            <div class="submenuItems">Download</div>
+            <div class="submenuItems">LMODroid</div>
+            <div class="submenuItems">Enterprise</div>
+            <div class="submenuItems">Legal</div>
+          </div>
+        </div>
+      </div>
+      <!-- end header-->
+      <!--start main-->
+<div class="middle">
+    <div class="background">
+        <div class="bg">
+       
+  
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   </div>
+   <div class="container">
+    <div class="wavy-circle rotating" ></div>
+    <div class="wavy-circle right rotating" ></div>
+  </div>
+   <div class="main">
+      <div class="title">
+          LibreMobileOS
+      </div>
+      <div class="texts">
+          <div class="items hover-underline" id="myItem">Rich Featured Privacy</div>
+          <div class="items hover-underline" id="myItem">Focused Mobile OS</div>
+          <div class="items hover-underline" id="myItem">Enjoy Taste Of Liberty</div>
+      </div>
+      <div class="buttons">
+        
+        <button>
+          <span class="text">Download</span>
+        </button>
+
+
+
+        
+      </div>
+
+      
+    
+    
+    </div>
+</div>
+      <!--end main-->
+      <div class="test">
+
+      </div>
+   
+  </body>
+  <script>
+    window.addEventListener('load', function() {
+  document.querySelectorAll('.hover-underline').forEach(function(el) {
+    el.classList.add('active');
+  });
+});
+    </script>
+  
+  <script>
+    const rotatingDivs = document.querySelectorAll('.rotating');
+    let angles = Array(rotatingDivs.length).fill(0);
+
+    function rotate() {
+      rotatingDivs.forEach((div, i) => {
+        angles[i] += 0.5;
+        div.style.transform = `rotate(${angles[i]}deg)`;
+      });
+      requestAnimationFrame(rotate);
+    }
+
+    rotate();
+  </script>
+</html>

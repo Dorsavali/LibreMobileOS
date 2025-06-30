@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+@font-face {
+    font-family: Albert;
+    src: url("../fonts/AlbertSans-VariableFont_wght.ttf");
+}
