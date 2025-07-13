@@ -51,6 +51,14 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        &.special{
+          padding: 10px;
+          background-color: #7354A0;
+          color: white;
+          border-radius: 16px;
+          text-align: center;
+
+        }
         &:hover{
                 padding: 10px;
                 background-color: #7354A0;
@@ -58,6 +66,9 @@
                 transform: scale(1.1);
                 border-radius: 16px;
                 text-align: center;
+                &.special{
+                  background-color: #543e74;
+                }
 
             
         }

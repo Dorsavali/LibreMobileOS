@@ -9,6 +9,7 @@
       href="./images/LibreMobileOS (1) (1).svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -28,10 +29,10 @@
         <div class="menu">
           <div class="submenuItems">Home</div>
           <div class="submenuItems">About</div>
-          <div class="submenuItems">Download</div>
+          <div class="submenuItems">Legal</div>
           <div class="submenuItems">LMODroid</div>
           <div class="submenuItems">Enterprise</div>
-          <div class="submenuItems">Legal</div>
+          <div class="submenuItems special">Download</div>
         </div>
       </div>
     </div>
@@ -224,13 +225,93 @@
           </div>
         </div>
         <div class="media">
-
+           <div class="sites">
+            <a href="https://git.libremobileos.com/users/sign_in" class="active">
+              <img src="./images/media/gitlab.svg" alt="Gitlab">
+            GitLab
+            </a>
+           </div>
+           <div class="sites">
+            <a href="https://jenkins.libremobileos.com/" class="active">
+              <img src="./images/media/jenkins.webp" alt="Jenkins">
+            Jenkins
+            </a>
+           </div>
+           <div class="sites">
+            <a href="https://gerrit.libremobileos.com/" class="active">
+              <img src="./images/media/gerrit.png" alt="gerrit">
+            Gerrit
+            </a>
+           </div>
+           <div class="sites">
+            <a href="https://stats.libremobileos.com/" class="active">
+            More stats
+            </a>
+           </div>
         </div>
       </div>
     </div>
     <!-- end statics-->
+    <!--start compatible-->
+     <div class="compatible">
+      <div class="texts">
+        <div class="items hover-underline" id="myItem">
+          Compatible with
+        </div>
+      </div>
+      <div class="compatible-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/Allwinner.png" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/Amlogic-Logo.wine.png" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/Broadcom.png" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/exynos.svg" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/intel.png" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/MediaTek.png" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/Qualcommpng.png" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/compatible/rockchip.png" alt="logo">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+     </div>
+    <!--end compatible-->
   </body>
-  <script>
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script>
     window.addEventListener("load", function () {
       document.querySelectorAll(".hover-underline").forEach(function (el) {
         el.classList.add("active");
@@ -293,4 +374,14 @@ counters.forEach(counter => {
   observer.observe(counter);
 });
   </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </html>
