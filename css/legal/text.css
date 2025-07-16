@@ -1,0 +1,15 @@
+.text-container{
+    width: 100%;
+    border-top: 0.8px solid lavender;
+
+    .title{
+        width: 95%;
+        font-family: Albert;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: #1B1528;
+padding-top: 30px;
+
+    }
+}

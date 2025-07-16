@@ -40,6 +40,9 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+     a{
+      text-decoration: none;
+
       .submenuItems {
         font-family: Albert;
         font-size: 16px;
@@ -51,12 +54,22 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        &.on{
+          font-size: 20px;
+          font-weight: 700;
+          color: #7354A0;
+        }
+        
         &.special{
-          padding: 10px;
-          background-color: #7354A0;
-          color: white;
-          border-radius: 16px;
-          text-align: center;
+          
+            padding: 10px;
+            background-color: #7354A0;
+            color: white;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+          
+
 
         }
         &:hover{
@@ -65,14 +78,18 @@
                 color: white;
                 transform: scale(1.1);
                 border-radius: 16px;
-                text-align: center;
+                text-align: center; 
+                font-size: 16px;
+                font-weight: 500;
                 &.special{
-                  background-color: #543e74;
+                  background-color: #44325e;
                 }
 
-            
         }
+        
+
       }
+     }
       
     }
     
