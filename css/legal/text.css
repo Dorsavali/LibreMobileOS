@@ -9,11 +9,23 @@
   .title {
     width: 95%;
     font-family: Albert;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
     color: #1b1528;
     padding: 40px 0px;
+  }
+  .description{
+    width: 95%;
+    p{
+      font-family: Albert;
+      font-size: 20px;
+      color: #1b1528;
+      padding: 20px;
+      line-height: 2;
+      box-sizing: border-box;
+
+    }
   }
   .container {
     position: relative;
