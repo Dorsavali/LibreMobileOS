@@ -23,7 +23,7 @@
       font-family: Albert;
       font-weight: 300;
       font-size: 28px;
-      color: #1B1528;
+      color: #1b1528;
     }
   }
   .right {
@@ -40,58 +40,63 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-     a{
-      text-decoration: none;
-
-      .submenuItems {
-        font-family: Albert;
-        font-size: 16px;
-        font-weight: 500;
-        transition: 300ms;
-        perspective: 800px;
-        color: #1B1528;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        &.on{
-          font-size: 20px;
-          font-weight: 700;
-          color: #7354A0;
+      a {
+        text-decoration: none;
+        &.disable-link{
+          pointer-events: none;
+          cursor: default;
         }
-        
-        &.special{
-          
+        .submenuItems {
+          font-family: Albert;
+          font-size: 16px;
+          font-weight: 500;
+          transition: 300ms;
+          perspective: 800px;
+          color: #1b1528;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          &.on {
+            font-size: 20px;
+            font-weight: 700;
+            color: #7354a0;
+          }
+         
+
+          &.special {
             padding: 10px;
-            background-color: #7354A0;
+            background-color: #7354a0;
             color: white;
             border-radius: 16px;
             text-align: center;
             text-decoration: none;
-          
-
-
+          }
+          &:hover {
+            padding: 10px;
+            background-color: #7354a0;
+            color: white;
+            transform: scale(1.1);
+            border-radius: 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            &.special {
+              background-color: #44325e;
+            }
+          }
+          &:not(.on):hover {
+            padding: 10px;
+            background-color: #7354a0;
+            color: white;
+            transform: scale(1.1);
+            border-radius: 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+          }
         }
-        &:hover{
-                padding: 10px;
-                background-color: #7354A0;
-                color: white;
-                transform: scale(1.1);
-                border-radius: 16px;
-                text-align: center; 
-                font-size: 16px;
-                font-weight: 500;
-                &.special{
-                  background-color: #44325e;
-                }
-
-        }
-        
-
       }
-     }
-      
     }
-    
   }
 }
