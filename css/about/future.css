@@ -1,15 +1,17 @@
-.vision-container {
+.future-container {
   width: 100%;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  .ourVision {
-    width: 100%;
+  .future {
+    width: 95%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
     .title {
       text-align: center;
       font-family: Albert;
@@ -62,47 +64,39 @@
         transform: scaleX(1);
       }
     }
-    .container {
-      position: relative;
-      width: 95%;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-      .card {
-        position: relative;
-        width: 45%;
-        height: 10.417vw;
-        background: #ffffff;
-        margin: 20px;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-        transition: 0.5s;
-        &:hover {
-          transform: scale(1.1);
+    .items {
+      ul {
+        list-style: disc;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        li {
+          background-color: #7956a6;
+          padding: 20px;
+          box-sizing: border-box;
+          color: white;
+          font-family: Albert;
+          font-weight: 600;
+          font-size: 18px;
+          border-radius: 16px;
         }
       }
     }
-
-    .content {
-      position: absolute;
-      bottom: 10px;
-      height: 10.417vw;
-      page-break-after: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-      align-items: center;
-      flex-flow: column nowrap;
-      p {
+    .description {
+      width: 95%;
+      font-family: Albert;
+      font-size: 25px;
+      font-weight: 700;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 48px;
+      color: #1b1528;
+      &.card {
+        background: #ffffff;
         padding: 20px;
-        box-sizing: border-box;
-        font-family: Albert;
-        color: #666;
-        line-height: 1.8;
-        text-align: left;
+        border-radius: 16px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
       }
     }
   }
