@@ -1,0 +1,127 @@
+.about-container {
+  width: 100%;
+  height: 575px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .background {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    .bottom-left {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-left: 200px solid transparent;
+      border-top: 200px solid #8dd5ef;
+      z-index: 2;
+    }
+
+    .bottom-left-inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-left: 300px solid transparent;
+      border-top: 300px solid #8caaf1;
+      z-index: 1;
+    }
+
+    .top-right {
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-right: 200px solid transparent;
+      border-bottom: 200px solid #a493f3;
+      z-index: 2;
+    }
+    .top-right-inner {
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-right: 300px solid transparent;
+      border-bottom: 300px solid #754ca6;
+      z-index: 1;
+    }
+    .curve-left {
+      position: absolute;
+      top: 10%;
+      left: -50px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid #e0f6fd;
+      z-index: 0;
+    }
+
+    .curve-right {
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid lavender;
+      z-index: 0;
+      overflow: hidden;
+    }
+  }
+  .about{
+    width: 95%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    .text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        .title{
+            width: 100%;
+            font-family: Albert;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            color: #1b1528;
+            text-align: left;
+            padding-left: 145px;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .description{
+            width: 100%;
+              font-family: Albert;
+              font-size: 20px;
+              color: #1b1528;
+              line-height: 2;
+              padding-left: 145px;
+              box-sizing: border-box;
+              font-weight: 500;
+          }
+    }
+    .logo{
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}
+}
