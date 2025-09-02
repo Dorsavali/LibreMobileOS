@@ -1,32 +1,22 @@
-.future-container {
+.infrastructures-container {
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  .future {
+  padding: 64px 100px;
+  box-sizing: border-box;
+  .infrastructures {
     width: 95%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     .title {
       text-align: center;
       font-family: Albert;
       font-weight: 700;
       color: #1b1528;
-      &.body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #0f0f0f;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
       &.hover-underline {
         font-size: 35px;
         color: #1b1528;
@@ -64,39 +54,35 @@
         transform: scaleX(1);
       }
     }
-    .items {
-      ul {
-       list-style: disc;
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 20px;
-        li {
-          background-color: #7956a6;
-          padding: 20px;
-          box-sizing: border-box;
-          color: white;
-          font-family: Albert;
-          font-weight: 600;
-          font-size: 18px;
-          border-radius: 16px;
-        }
+    .text {
+      display: flex;
+      gap: 20px;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      .description {
+        font-family: Albert;
+        font-weight: 700;
+        font-size: 25px;
+        color: #1b1528;
       }
-    }
-    .description {
-      width: 95%;
-      font-family: Albert;
-      font-size: 25px;
-      font-weight: 700;
-      padding: 20px;
-      box-sizing: border-box;
-      text-align: center;
-      line-height: 48px;
-      color: #1b1528;
-      &.card {
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 16px;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      ul {
+
+        li {
+            padding: 20px 0px;
+            box-sizing: border-box;
+            font-family: Albert;
+            font-weight: 700;
+            font-size: 18px;
+            color: #3e217d;
+            p{
+                padding: 5px 0px;
+            box-sizing: border-box;
+                font-weight: 400;
+                color: #1b1528;
+            }
+             
+        }
       }
     }
   }
