@@ -9,45 +9,52 @@
       href="./images/LibreMobileOS (1) (1).svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/home/main.css" />
   </head>
   <body>
     <!-- start header-->
-    <div class="header">
-      <div class="left">
-        <div class="logo">
-          <img
-            src="./images/LibreMobileOS (1) (1).svg"
-            alt="LibreOSlogo"
-            class="logoSvg"
-          />
-        </div>
-        <div class="name">LibreMobileOS</div>
+    <label for="show">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <input type="radio" name="menu" id="show" />
+    <input type="radio" name="menu" id="close" />
+    <header>
+      <label for="close"> &times; </label>
+      <div class="logo">
+        <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
       </div>
-      <div class="right">
+      <div class="menuItems">
         <div class="menu">
-          <a href="./" class="disable-link">
-            <div class="submenuItems on ">Home</div>
-          </a>
-          <a href="./legal.html" >
-            <div class="submenuItems">Legal</div>
-          </a>
+          <nav>
+            <ul>
+              <li class="active-item">
+                <a href="./" class="disable-link active ">Home</a>
+              </li>
+              <li>
+                <a href="./legal.html">Legal</a>
+              </li>
+              <li>
+                <a href="https://get.libremobileos.com/">LMODroid</a>
+              </li>
+              <li>
+                <a href="./enterprise.html">Enterprise</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contactBtn">
           <a href="https://get.libremobileos.com/">
-            <div class="submenuItems">LMODroid</div>
-          </a>
-          <a href="./enterprise.html">
-            <div class="submenuItems">Enterprise</div>
-          </a>
-          <a href="./about.html">
-            <div class="submenuItems">About</div>
-          </a>
-          <a href="https://get.libremobileos.com/">
-            <div class="submenuItems special">Download</div>
+            <button>Download</button>
           </a>
         </div>
       </div>
-    </div>
+    </header>
     <!-- end header-->
     <!--start Lading-->
     <div class="landing">
@@ -118,9 +125,10 @@
         </div>
         <div class="buttons">
           <a href="https://get.libremobileos.com/">
-          <button>
-            <span class="text">Download</span>
-          </button></a>
+            <button>
+              <span class="text">Download</span>
+            </button></a
+          >
         </div>
       </div>
     </div>
@@ -238,81 +246,85 @@
           </div>
         </div>
         <div class="media">
-           <div class="sites">
-            <a href="https://git.libremobileos.com/users/sign_in" class="active">
-              <img src="./images/media/gitlab.svg" alt="Gitlab">
-            GitLab
+          <div class="sites">
+            <a
+              href="https://git.libremobileos.com/users/sign_in"
+              class="active"
+            >
+              <img src="./images/media/gitlab.svg" alt="Gitlab" />
+              GitLab
             </a>
-           </div>
-           <div class="sites">
+          </div>
+          <div class="sites">
             <a href="https://jenkins.libremobileos.com/" class="active">
-              <img src="./images/media/jenkins.webp" alt="Jenkins">
-            Jenkins
+              <img src="./images/media/jenkins.webp" alt="Jenkins" />
+              Jenkins
             </a>
-           </div>
-           <div class="sites">
+          </div>
+          <div class="sites">
             <a href="https://gerrit.libremobileos.com/" class="active">
-              <img src="./images/media/gerrit.png" alt="gerrit">
-            Gerrit
+              <img src="./images/media/gerrit.png" alt="gerrit" />
+              Gerrit
             </a>
-           </div>
-           <div class="sites">
+          </div>
+          <div class="sites">
             <a href="https://stats.libremobileos.com/" class="active">
-            More stats
+              More stats
             </a>
-           </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- end statics-->
     <!--start compatible-->
-     <div class="compatible">
+    <div class="compatible">
       <div class="texts">
-        <div class="items hover-underline" id="myItem">
-          Compatible with
-        </div>
+        <div class="items hover-underline" id="myItem">Compatible with</div>
       </div>
       <div class="compatible-container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/Allwinner.png" alt="logo">
+                <img src="./images/compatible/Allwinner.png" alt="logo" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/Amlogic-Logo.wine.png" alt="logo">
+                <img
+                  src="./images/compatible/Amlogic-Logo.wine.png"
+                  alt="logo"
+                />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/Broadcom.png" alt="logo">
+                <img src="./images/compatible/Broadcom.png" alt="logo" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/exynos.svg" alt="logo">
+                <img src="./images/compatible/exynos.svg" alt="logo" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/intel.png" alt="logo">
+                <img src="./images/compatible/intel.png" alt="logo" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/MediaTek.png" alt="logo">
+                <img src="./images/compatible/MediaTek.png" alt="logo" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/Qualcommpng.png" alt="logo">
+                <img src="./images/compatible/Qualcommpng.png" alt="logo" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="image">
-                <img src="./images/compatible/rockchip.png" alt="logo">
+                <img src="./images/compatible/rockchip.png" alt="logo" />
               </div>
             </div>
           </div>
@@ -320,45 +332,43 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
-     </div>
+    </div>
     <!--end compatible-->
     <!--start footer-->
     <footer>
       <div class="footer">
         <div class="left">
           <div class="logo">
-            <img src="./images/footer/LibreMobileOSlogo.svg" alt="logo">
+            <img src="./images/footer/LibreMobileOSlogo.svg" alt="logo" />
           </div>
-          <div class="name">
-            LibreMobileOS
-          </div>
+          <div class="name">LibreMobileOS</div>
           <div class="designer">
-            Designed and developed by <a href="https://github.com/Dorsavali">DorsaVali</a>
+            Designed and developed by
+            <a href="https://github.com/Dorsavali">DorsaVali</a>
           </div>
         </div>
         <div class="right">
           <div class="social">
             <div class="mediaLink">
               <a href="https://www.linkedin.com/company/libremobileos">
-                <img src="./images/footer/Linkedin-logo.svg" alt="linkdin">
+                <img src="./images/footer/Linkedin-logo.svg" alt="linkdin" />
               </a>
             </div>
             <div class="mediaLink">
               <a href="https://matrix.to/#/%23lmodroid:libremobileos.com">
-                <img src="./images/footer/Element-logo.svg" alt="matrix">
+                <img src="./images/footer/Element-logo.svg" alt="matrix" />
               </a>
             </div>
             <div class="mediaLink">
               <a href="https://t.me/LMODroid">
-                <img src="./images/footer/telegram.svg" alt="telegram">
+                <img src="./images/footer/telegram.svg" alt="telegram" />
               </a>
             </div>
             <div class="mediaLink">
               <a href="https://x.com/libremobileos">
-                <img src="./images/footer/X-logo.svg" alt="x">
+                <img src="./images/footer/X-logo.svg" alt="x" />
               </a>
             </div>
-
           </div>
           <div class="copyright">
             © 2025 LibreMobileOS . All Rights Reserved
@@ -368,8 +378,11 @@
     </footer>
     <!--end footer-->
   </body>
+  <script type="module" src="./src/js/main.js"></script>
+
+  
   <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-<script>
+  <script>
     window.addEventListener("load", function () {
       document.querySelectorAll(".hover-underline").forEach(function (el) {
         el.classList.add("active");
@@ -394,52 +407,55 @@
 
   <script>
     function animateCounter(counter) {
-  const target = +counter.getAttribute('data-target');
-  const hasPlus = counter.getAttribute('data-plus') === 'true';
-  const duration = 1000;
-  const startTime = performance.now();
+      const target = +counter.getAttribute("data-target");
+      const hasPlus = counter.getAttribute("data-plus") === "true";
+      const duration = 1000;
+      const startTime = performance.now();
 
-  function update(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const value = Math.floor(progress * target);
-    counter.innerText = value;
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.floor(progress * target);
+        counter.innerText = value;
 
-    if (progress < 1) {
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = hasPlus ? target + "+" : target;
+        }
+      }
+
       requestAnimationFrame(update);
-    } else {
-      counter.innerText = hasPlus ? target + '+' : target;
     }
-  }
 
-  requestAnimationFrame(update);
-}
+    // IntersectionObserver
+    const counters = document.querySelectorAll(".counter");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
 
-// IntersectionObserver
-const counters = document.querySelectorAll('.counter');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter(entry.target);
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.5
-});
-
-counters.forEach(counter => {
-  observer.observe(counter);
-});
+    counters.forEach((counter) => {
+      observer.observe(counter);
+    });
   </script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5,
-        spaceBetween: 0,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>

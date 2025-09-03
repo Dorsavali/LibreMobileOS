@@ -1,60 +1,102 @@
-<div class="about">
-    <div class="text">
-       <div class="title">
-           About
-       </div>
-       <div class="description">
-           The LibreMobileOS Foundation, or LMO, is a charitable foundation. Its mission is to support the collaborative development of Secure and customizable mobile operating system. It serves as an independent legal entity to which anyone can contribute code, funding and other resources, with the knowledge that these contributions will be used for public benefit.
-       </div>
-    </div>
-
-   </div>
-
-   .about{
-    width: 95%;
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  .left {
+    width: 30%;
+    height: inherit;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: start;
+    padding-left: 25px;
     align-items: center;
-    .text{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column nowrap;
-        .title{
-            width: 100%;
-            font-family: Albert;
-            font-size: 40px;
+    gap: 15px;
+    .logoSvg {
+      width: 50px;
+      height: 50px;
+    }
+    .name {
+      width: fit-content;
+      font-family: Albert;
+      font-weight: 300;
+      font-size: 28px;
+      color: #1b1528;
+    }
+  }
+  .right {
+    width: 70%;
+    height: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .menu {
+      width: 70%;
+      background-color: #f5f2f8;
+      height: 60px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        text-decoration: none;
+        &.disable-link{
+          pointer-events: none;
+          cursor: default;
+        }
+        .submenuItems {
+          font-family: Albert;
+          font-size: 16px;
+          font-weight: 500;
+          transition: 300ms;
+          perspective: 800px;
+          color: #1b1528;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          &.on {
+            font-size: 20px;
             font-weight: 700;
-            text-align: center;
-            color: #ffffff;
-            text-align: left;
-            padding-left: 40px;
-            padding-bottom: 20px;
-            box-sizing: border-box;
-        }
-        .description{
-              font-family: Albert;
-              font-size: 20px;
-              color: #ffffff;
-              line-height: 2;
-              padding-left: 40px;
-              box-sizing: border-box;
-              font-weight: 500;
-        
-            
+            color: #7354a0;
           }
-    }
-    .logo{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-            width: 80%;
-            height: 80%;
+         
+
+          &.special {
+            padding: 10px;
+            background-color: #7354a0;
+            color: white;
+            border-radius: 16px;
+            text-align: center;
+            text-decoration: none;
+          }
+          &:hover {
+            padding: 10px;
+            background-color: #7354a0;
+            color: white;
+            transform: scale(1.1);
+            border-radius: 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            &.special {
+              background-color: #44325e;
+            }
+          }
+          &:not(.on):hover {
+            padding: 10px;
+            background-color: #7354a0;
+            color: white;
+            transform: scale(1.1);
+            border-radius: 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+          }
         }
+      }
     }
+  }
 }

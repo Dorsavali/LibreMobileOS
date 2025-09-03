@@ -10,44 +10,51 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/enterprise/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- start header-->
-    <div class="header">
-      <div class="left">
-        <div class="logo">
-          <img
-            src="./images/LibreMobileOS (1) (1).svg"
-            alt="LibreOSlogo"
-            class="logoSvg"
-          />
-        </div>
-        <div class="name">LibreMobileOS</div>
+    <label for="show">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <input type="radio" name="menu" id="show" />
+    <input type="radio" name="menu" id="close" />
+    <header>
+      <label for="close"> &times; </label>
+      <div class="logo">
+        <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
       </div>
-      <div class="right">
+      <div class="menuItems">
         <div class="menu">
-          <a href="./">
-            <div class="submenuItems">Home</div>
-          </a>
-          <a href="./legal.html">
-            <div class="submenuItems">Legal</div>
-          </a>
+          <nav>
+            <ul>
+              <li >
+                <a href="./index.html" >Home</a>
+              </li>
+              <li>
+                <a href="./legal.html">Legal</a>
+              </li>
+              <li>
+                <a href="https://get.libremobileos.com/">LMODroid</a>
+              </li>
+              <li class="active-item">
+                <a href="./" class="disable-link active ">Enterprise</a>
+              </li>
+              <li>
+                <a href="./about.html" >About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contactBtn">
           <a href="https://get.libremobileos.com/">
-            <div class="submenuItems">LMODroid</div>
-          </a>
-          <a href="./enterprise.html" class="disable-link">
-            <div class="submenuItems on">Enterprise</div>
-          </a>
-          <a href="./about.html">
-            <div class="submenuItems">About</div>
-          </a>
-          <a href="https://get.libremobileos.com/">
-            <div class="submenuItems special">Download</div>
+            <button>Download</button>
           </a>
         </div>
       </div>
-    </div>
+    </header>
     <!-- end header-->
 
     <div class="enterprise-container">
@@ -176,5 +183,6 @@
       </div>
     </footer>
     <!--end footer-->
+    
   </body>
 </html>
