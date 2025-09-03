@@ -1,6 +1,9 @@
 label[for="show"] {
   display: none;
 }
+.header{
+  display: none;
+}
 header {
   width: 100%;
   height: unset;
@@ -13,6 +16,7 @@ header {
   background-color: unset;
   box-shadow: unset;
   .logo {
+    display: flex;
     flex-flow:row nowrap;
     font-size: 24px;
     justify-content: start;
