@@ -26,7 +26,7 @@ header {
   z-index: 2;
   width: 30vw;
   height: 400vh;
-  background-color: #efecf4;
+  background-color: #F8F6FA;
   border-radius: 0px 10px 10px 0px;
   box-shadow: 5px 5px 25px rgba(133, 133, 133, 0.293);
   padding: 20px;
@@ -44,8 +44,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row;
+    flex-flow:column nowrap;
+    gap: 10px;
     width: 100%;
+    font-family: Albert;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1b1528;
     img {
       width: 50%;
     }

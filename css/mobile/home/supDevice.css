@@ -1,7 +1,7 @@
 .supDevice {
   width: 100%;
   height: 170px;
-  padding-top: 50px;
+  padding-top: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
     width: 95%;
     height: 120px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     gap: 70px;

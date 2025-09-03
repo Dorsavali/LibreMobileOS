@@ -1,9 +1,13 @@
 .landing {
+  width: 100%;
+  height: 575px;
   .background {
     position: absolute;
-    width: 100%;
-    height: 575px;
+    width: inherit;
+    height: inherit;
     left: 0;
+    top: 0;
+    z-index: -1;
     background: #efecf4;
     overflow: hidden;
     .bg {
@@ -100,41 +104,36 @@
         transform-origin: 8vw 17vh;
         box-shadow: 100vmin 0 12.521632253264542vmin currentColor;
       }
-      
     }
   }
   .main {
+    padding: 50px;
+    box-sizing: border-box;
     width: 100%;
-    height: 575px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    position: relative;
     gap: 50px;
     perspective: 800px;
     .title {
-      width: 95%;
-      height: 20%;
       font-family: Albert;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 600;
       color: #1b1528;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
     .texts {
-      width: 95%;
-      height: 10%;
       display: flex;
-      justify-content: space-around;
+      gap: 30px;
+      flex-flow: column nowrap;
+      justify-content: center;
       align-items: center;
-      z-index: 2;
       .items {
         font-family: Albert;
-        font-size: 40px;
+        color: #1b1528;
+        font-size: 20px;
         font-weight: 500;
+        text-align: center;
       }
       &.body {
         display: flex;
@@ -184,14 +183,11 @@
       }
     }
     .buttons {
-      width: 95%;
-      height: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
-       gap: 15px;
-      a{
-         text-decoration: none;
+      a {
+        text-decoration: none;
         button {
           align-items: center;
           background-image: linear-gradient(
@@ -207,7 +203,7 @@
           box-sizing: border-box;
           color: #1b1528;
           display: flex;
-          font-size: 20px;
+          font-size: 18px;
           font-family: Albert;
           font-weight: 500;
           justify-content: center;
@@ -234,7 +230,7 @@
       button span {
         background-color: rgb(255, 255, 255);
 
-        padding: 16px 24px;
+        padding: 12px 2px;
         border-radius: 6px;
         width: 100%;
         height: 100%;
@@ -248,13 +244,7 @@
 
       button:active {
         transform: scale(0.9);
- 
       }
     }
-   
-    
   }
-  
 }
-
-

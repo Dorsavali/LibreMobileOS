@@ -4,7 +4,7 @@ label[for="show"] {
 header {
   width: 100%;
   height: unset;
-  padding: 10px 100px;
+  padding: 15px 100px;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
@@ -13,13 +13,16 @@ header {
   background-color: unset;
   box-shadow: unset;
   .logo {
-    width: 7%;
+    flex-flow:row nowrap;
+    font-size: 24px;
+    justify-content: start;
+    width: fit-content;
     img{
-      width: 100%;
+      width: 15%;
     }
   }
   .menuItems {
-    background-color: #f5f2f8;
+    background-color: #F8F6FA;
     border-radius: 20px;
     padding: 10px 20px;
     box-sizing: border-box;
