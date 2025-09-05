@@ -36,8 +36,8 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 40px 0px;
+    gap: 40px;
+    padding: 70px 0px;
     .card {
       box-sizing: border-box;
       width: 47%;
@@ -57,6 +57,7 @@
       gap: 20px;
       padding: 20px;
       box-sizing: border-box;
+      border: 0.8px solid #f5f2f8;
       .titleAndImage {
         width: 100%;
         display: flex;
@@ -71,8 +72,8 @@
           font-weight: 600;
         }
         img {
-          width: 10%;
-          height: 10%;
+          width: 32px;
+          height: 32px;
         }
       }
       .text {
@@ -88,8 +89,9 @@
     }
 
     .card:hover {
-      border: 1px solid black;
-      transform: scale(1.05);
+      border: 0.8px solid #7956a6;
+      box-sizing: border-box;
+      
     }
   }
 }
