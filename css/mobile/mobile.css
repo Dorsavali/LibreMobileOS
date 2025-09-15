@@ -7,3 +7,5 @@
 @import url("./home/statics.css");
 @import url("./home/compatible.css");
 @import url("./home/footer.css");
+/*legal page*/
+@import url("./legal/text.css");
