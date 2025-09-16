@@ -77,7 +77,7 @@
 header {
   z-index: 2;
   width: 30vw;
-  height: 400vh;
+  height: 100%;
   background-color: #f8f6fa;
   border-radius: 0px 10px 10px 0px;
   box-shadow: 5px 5px 25px rgba(133, 133, 133, 0.293);
