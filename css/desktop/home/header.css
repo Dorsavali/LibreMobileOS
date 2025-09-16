@@ -1,8 +1,13 @@
-label[for="show"] {
-  display: none;
-}
+
+
 .header{
   display: none;
+}
+.backdrop {
+  display: none;
+}
+input#show:checked ~ .backdrop {
+display: none;
 }
 header {
   position: relative;
