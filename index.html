@@ -36,8 +36,9 @@
 </div>
 <input type="radio" name="menu" id="show" />
 <input type="radio" name="menu" id="close" />
+
+<label for="close" class="backdrop"></label>
     <header>
-      <label for="close"> &times; </label>
       <div class="logo">
         <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
         LibreMobileOS
@@ -404,6 +405,18 @@
     </footer>
     <!--end footer-->
   </body>
+  <script>
+    const show = document.getElementById("show");
+const close = document.getElementById("close");
+
+show.addEventListener("change", () => {
+  if (show.checked) document.body.style.overflow = "hidden";
+});
+close.addEventListener("change", () => {
+  if (close.checked) document.body.style.overflow = "auto";
+});
+
+  </script>
   <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
   <script>
     window.addEventListener("load", function () {
