@@ -1,74 +1,36 @@
 .enterprise-container {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  padding: unset;
+  gap: unset;
   .title {
     width: 95%;
-    font-family: Albert;
     font-size: 40px;
-    font-weight: 700;
     text-align: center;
-    color: #1b1528;
     padding-top: 40px;
   }
   .description {
     width: 95%;
     p {
-      font-family: Albert;
       font-size: 20px;
-      color: #1b1528;
       padding: 20px;
-      line-height: 2.2;
       box-sizing: border-box;
-      text-align: left;
       a {
-        font-family: Albert;
         font-size: 20px;
-        color: deepskyblue;
       }
     }
   }
   .items {
     width: 95%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
     padding: 70px 0px;
     .card {
-      box-sizing: border-box;
       width: 47%;
-      background: #f5f2f8;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.22);
-      backdrop-filter: blur(6px);
-      border-radius: 16px;
-      text-align: center;
-      transition: all 0.5s;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: center;
-      user-select: none;
-      font-weight: bolder;
-      color: black;
       gap: 20px;
       padding: 20px;
-      box-sizing: border-box;
-      border: 0.8px solid #f5f2f8;
       .titleAndImage {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         box-sizing: border-box;
         padding: 0px 35px;
         .title-card {
-          font-family: Albert;
           font-size: 25px;
-          color: #1b1528;
           font-weight: 600;
         }
         img {
@@ -77,21 +39,13 @@
         }
       }
       .text {
-        width: 100%;
-        font-family: Albert;
         font-size: 16px;
-        color: #1b1528;
         padding: 0px 35px;
         box-sizing: border-box;
-        font-weight: 400;
-        text-align: start;
       }
     }
 
     .card:hover {
-      border: 0.8px solid #7956a6;
-      box-sizing: border-box;
-      
     }
   }
 }

@@ -9,3 +9,5 @@
 @import url("./home/footer.css");
 /*legal page*/
 @import url("./legal/text.css");
+/*enterprise page*/
+@import url("./enterprise/landingPage.css");
