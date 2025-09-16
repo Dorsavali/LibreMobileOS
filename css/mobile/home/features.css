@@ -1,53 +1,54 @@
-.features{
-    width: 100%;
-    height: 400px;
+.features {
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .groupFeatures {
     display: flex;
     justify-content: center;
     align-items: center;
-    .groupFeatures{
-        width: 95%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: column nowrap;
-        height: inherit;
-        .feature{
-            width: 350px;
-            height:315px;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: start;
-            align-items: center;
-            background-color: rgb(248, 241, 246);
-            border-radius: 24px;
-            gap: 5px;
-            .image{
-                width: 250px;
-                height: 200px;
-                img{
-                    width: 250px;
-                    height: 200px;
-                    object-fit: contain;
-                }
-            }
-            .title{
-                font-family: Albert;
-                font-size: 24px;
-                font-weight: 600;
-                color: #1B1528;
-            }
-            .description{
-                padding: 10px 30px;
-                font-family: Albert;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5;
-                color: #1B1528;
-            }
-            &:hover{
-                background-color: #DCDAF5;
-                border: 0.5px solid black;
-            }
+    flex-flow: row wrap;
+    gap: 20px;
+    .feature {
+      width: 350px;
+      height: 260px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: center;
+      background-color: rgb(248, 241, 246);
+      border: 0.5px solid rgb(248, 241, 246);
+      transition: 500ms;
+      border-radius: 24px;
+      .image {
+        width: 150px;
+        height: 150px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
         }
+      }
+      .title {
+        font-family: Albert;
+        font-size: 22px;
+        font-weight: 600;
+        color: #1b1528;
+      }
+      .description {
+        padding: 10px 30px;
+        font-family: Albert;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #1b1528;
+        text-align: center;
+      }
+      &:hover {
+        background-color: #dcdaf5;
+        border: 0.5px solid black;
+      }
     }
+  }
 }

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1000px;
   .staticGroup {
     width: 95%;
     height: inherit;
