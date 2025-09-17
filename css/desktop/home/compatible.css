@@ -2,119 +2,47 @@
   padding-top: 50px;
   width: 100%;
   height: 300px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: start;
-  align-items: center;
-  gap: 20px;
   user-select: none;
   .texts {
-    width: 95%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 2;
     .items {
-      font-family: Albert;
-      font-size: 100px;
-      font-weight: 700;
     }
-    &.body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #0f0f0f;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     .hover-underline {
-      font-size: 25px;
-      color: #1b1528;
-      position: relative;
-      display: inline-block;
-      padding: 10px 0px;
-      box-sizing: border-box;
     }
 
     .hover-underline::after,
     .hover-underline::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(to right, #7956a6, #91d6ed);
-      bottom: -5px;
-      left: 0;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 1s ease-out;
     }
 
     .hover-underline::before {
-      top: -5px;
-      transform-origin: left;
     }
 
     .hover-underline:hover::after,
     .hover-underline:hover::before {
-      transition: transform 2s ease-out;
     }
     .hover-underline.active::after,
     .hover-underline.active::before {
-      transform: scaleX(1);
     }
   }
   .compatible-container {
     width: 95%;
-    height: 30%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    height: 50%;
     .swiper {
-      width: 100%;
-      height: 100%;
     }
 
     .swiper-slide {
-      text-align: center;
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border-right: 0.8px solid lavender;
       .image {
-        width: 200px;
-        height: 200px;
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
         }
       }
     }
 
     .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
     .swiper-button-next,
-      .swiper-button-prev {
-        width: 30px;
-        height: 30px;
-        background-color: white;
-        border-color: lavender;
-        border-radius: 50%;
-        border: 1px solid lavender;
-        &::after {
-          color: #424750;
-          font-size: 12px;
-          font-weight: bold;
-        }
+    .swiper-button-prev {
+      &::after {
       }
+    }
   }
 }

@@ -480,14 +480,21 @@ close.addEventListener("change", () => {
       observer.observe(counter);
     });
   </script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,
-      spaceBetween: 0,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1, 
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 0, 
+      }
+    }
+  });
+</script>
+
 </html>

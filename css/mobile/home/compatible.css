@@ -1,7 +1,6 @@
 .compatible {
-  padding-top: 50px;
-  width: 100%;
-  height: 300px;
+padding:50px;
+box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -9,27 +8,10 @@
   gap: 20px;
   user-select: none;
   .texts {
-    width: 95%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 2;
     .items {
       font-family: Albert;
-      font-size: 100px;
       font-weight: 700;
     }
-    &.body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #0f0f0f;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     .hover-underline {
       font-size: 25px;
       color: #1b1528;
@@ -68,13 +50,13 @@
     }
   }
   .compatible-container {
-    width: 95%;
-    height: 30%;
+    width: 100%;
+    height: 40%;
     display: flex;
     justify-content: start;
     align-items: center;
     .swiper {
-      width: 50%;
+      width: 100%;
       height: 100%;
     }
 
@@ -84,7 +66,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-right: 0.8px solid lavender;
       .image {
         width: 200px;
         height: 200px;
@@ -100,7 +81,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+
     }
     .swiper-button-next,
       .swiper-button-prev {
