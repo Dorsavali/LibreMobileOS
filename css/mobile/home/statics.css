@@ -1,37 +1,24 @@
-.statics{
+.statics {
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1000px;
+  padding: 20px 50px;
+  box-sizing: border-box;
   .staticGroup {
-    width: 95%;
-    height: inherit;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     .texts {
-      width: 95%;
-      height: 100px;
       display: flex;
       justify-content: space-around;
       align-items: center;
       z-index: 2;
       .items {
         font-family: Albert;
-        font-size: 100px;
-        font-weight: 700;
-      }
-      &.body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #0f0f0f;
-        margin: 0;
-        font-family: Arial, sans-serif;
+        font-weight: 600;
       }
 
       .hover-underline {
@@ -71,65 +58,80 @@
         transform: scaleX(1);
       }
     }
-    
-    .static{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        flex-flow:column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        .counter-section{
-          text-align: center;
-          padding: 100px 0;
-          font-family: sans-serif;
-          .counter {
-            font-size: 48px;
-            font-weight: bold;
-            color: #1B1528;
-          }
-          p{
-            padding-top: 10px;
-            font-family: Albert;
-            font-size: 20px;
-            font-weight: 400;
-            text-transform: capitalize;
-            color: #1B1528;
-          }
+
+    .static {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      .counter-section {
+        text-align: center;
+        padding: 80px ;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        .counter {
+          font-size: 48px;
+          font-weight: bold;
+          color: #1b1528;
         }
-        
+        p {
+          padding-top: 10px;
+          font-family: Albert;
+          font-size: 25px;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #1b1528;
+        }
+      }
     }
     .media {
-      width: 70%;
-      height: auto;
       background-color: #F8F1F6;
       border-radius: 40px;
       display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      align-items: center;
-      .sites{
-        width: fit-content;
-        height: 100%;
-        padding: 20px 60px;
+      width: 100%;                 
+      justify-content: flex-start; 
+      overflow-x: auto;            
+      -webkit-overflow-scrolling: touch;
+      gap: 12px;
+      padding: 10px;
+      &::-webkit-scrollbar {
+        height: 2px;             
+      }
+    
+      &::-webkit-scrollbar-track {
+        background: #ffffff;      
+        border-radius: 40px;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background: #b4a9c7;     
+        border-radius: 40px;
+      }
+    
+      &::-webkit-scrollbar-thumb:hover {
+        background: #8e7cb6;      
+      }
+      .sites {
+        padding: 20px 40px;
         box-sizing: border-box;
         border-radius: 40px;
         background-color: #f2eef1;
         display: flex;
+        flex: 0 0 auto;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         transition: 500ms;
-        &:hover{
-          background-color: #EBE3EA;
-          a{
+        &:hover {
+          background-color: #f2eef1;
+          a {
             font-weight: 600;
           }
-          &:active{
-            background-color: #DCDAF5;
+          &:active {
+            background-color: #dcdaf5;
           }
         }
-        a{
+        a {
           font-family: Albert;
           text-decoration: none;
           font-size: 20px;
@@ -140,15 +142,12 @@
           align-items: center;
           gap: 8px;
           flex-flow: row nowrap;
-          img{
+          img {
             width: 30px;
             height: 30px;
-
           }
         }
       }
     }
   }
-
-  
 }

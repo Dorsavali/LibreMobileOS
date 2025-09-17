@@ -1,73 +1,36 @@
 .statics{
-  width: 100%;
   height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+padding: unset;
   .staticGroup {
     width: 95%;
     height: inherit;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
     .texts {
       width: 95%;
       height: 100px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      z-index: 2;
       .items {
-        font-family: Albert;
-        font-size: 100px;
         font-weight: 700;
-      }
-      &.body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #0f0f0f;
-        margin: 0;
-        font-family: Arial, sans-serif;
       }
 
       .hover-underline {
-        font-size: 25px;
-        color: #1b1528;
-        position: relative;
-        display: inline-block;
-        padding: 10px 0px;
-        box-sizing: border-box;
+
       }
 
       .hover-underline::after,
       .hover-underline::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, #7956a6, #91d6ed);
-        bottom: -5px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 1s ease-out;
+
       }
 
       .hover-underline::before {
-        top: -5px;
-        transform-origin: left;
+
       }
 
       .hover-underline:hover::after,
       .hover-underline:hover::before {
-        transition: transform 2s ease-out;
+
       }
       .hover-underline.active::after,
       .hover-underline.active::before {
-        transform: scaleX(1);
+
       }
     }
     
@@ -77,23 +40,13 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
-        align-items: center;
         .counter-section{
-          text-align: center;
           padding: 100px 0;
-          font-family: sans-serif;
           .counter {
-            font-size: 48px;
-            font-weight: bold;
-            color: #1B1528;
+
           }
           p{
-            padding-top: 10px;
-            font-family: Albert;
-            font-size: 20px;
-            font-weight: 400;
-            text-transform: capitalize;
-            color: #1B1528;
+
           }
         }
         
@@ -101,9 +54,6 @@
     .media {
       width: 70%;
       height: auto;
-      background-color: #F8F1F6;
-      border-radius: 40px;
-      display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
@@ -111,37 +61,21 @@
         width: fit-content;
         height: 100%;
         padding: 20px 60px;
-        box-sizing: border-box;
-        border-radius: 40px;
-        background-color: #f2eef1;
-        display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
-        transition: 500ms;
         &:hover{
-          background-color: #EBE3EA;
+
           a{
             font-weight: 600;
           }
           &:active{
-            background-color: #DCDAF5;
+
           }
         }
         a{
-          font-family: Albert;
-          text-decoration: none;
-          font-size: 20px;
-          font-weight: 500;
-          color: #1b1528;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 8px;
-          flex-flow: row nowrap;
+
           img{
-            width: 30px;
-            height: 30px;
+
 
           }
         }
