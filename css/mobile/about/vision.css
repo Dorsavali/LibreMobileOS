@@ -1,0 +1,110 @@
+.vision-container {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  .ourVision {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .title {
+      text-align: center;
+      font-family: Albert;
+      font-weight: 700;
+      color: #1b1528;
+      &.body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #0f0f0f;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      &.hover-underline {
+        font-size: 35px;
+        color: #1b1528;
+        position: relative;
+        display: inline-block;
+        padding: 10px 0px;
+        box-sizing: border-box;
+      }
+
+      &.hover-underline::after,
+      &.hover-underline::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #7956a6, #91d6ed);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 1s ease-out;
+      }
+
+      &.hover-underline::before {
+        top: -5px;
+        transform-origin: left;
+      }
+
+      &.hover-underline:hover::after,
+      &.hover-underline:hover::before {
+        transition: transform 2s ease-out;
+      }
+      &.hover-underline.active::after,
+      &.hover-underline.active::before {
+        transform: scaleX(1);
+      }
+    }
+    .container {
+      position: relative;
+      width: 95%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      .card {
+        position: relative;
+        width: 45%;
+        height: 10.417vw;
+        background: #ffffff;
+        margin: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .content {
+      position: absolute;
+      bottom: 10px;
+      height: 10.417vw;
+      page-break-after: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      align-items: center;
+      flex-flow: column nowrap;
+      p {
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: Albert;
+        color: #666;
+        line-height: 1.8;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -66,7 +66,7 @@
       align-items: center;
       .counter-section {
         text-align: center;
-        padding: 80px ;
+        padding: 50px ;
         box-sizing: border-box;
         font-family: sans-serif;
         .counter {
@@ -87,32 +87,12 @@
     .media {
       background-color: #F8F1F6;
       border-radius: 40px;
-      display: flex;
-      width: 100%;                 
-      justify-content: flex-start; 
-      overflow-x: auto;            
-      -webkit-overflow-scrolling: touch;
+      display: flex;        
       gap: 12px;
       padding: 10px;
-      &::-webkit-scrollbar {
-        height: 2px;             
-      }
-    
-      &::-webkit-scrollbar-track {
-        background: #ffffff;      
-        border-radius: 40px;
-      }
-    
-      &::-webkit-scrollbar-thumb {
-        background: #b4a9c7;     
-        border-radius: 40px;
-      }
-    
-      &::-webkit-scrollbar-thumb:hover {
-        background: #8e7cb6;      
-      }
+
       .sites {
-        padding: 20px 40px;
+        padding: 20px;
         box-sizing: border-box;
         border-radius: 40px;
         background-color: #f2eef1;
@@ -132,19 +112,21 @@
           }
         }
         a {
-          font-family: Albert;
+          display: inline-block; 
           text-decoration: none;
-          font-size: 20px;
-          font-weight: 500;
-          color: #1b1528;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 8px;
-          flex-flow: row nowrap;
+          font-size: 0;          
+          color: transparent;
           img {
-            width: 30px;
-            height: 30px;
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+          &.text-show{
+            font-family: Albert;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            color: #1b1528;
           }
         }
       }

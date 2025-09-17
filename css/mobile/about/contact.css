@@ -1,0 +1,115 @@
+.contact-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 64px 100px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  .contact {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    align-items: center;
+     border-radius: 16px;
+    border: 0.8px solid #7956a6;
+    .image {
+      width: 55%;
+    }
+    .inputs {
+      width: 45%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      padding: 0px 50px;
+      box-sizing: border-box;
+      gap: 30px;
+      .title {
+        width: fit-content;
+        text-align: center;
+        font-family: Albert;
+        font-weight: 700;
+        color: #1b1528;
+        &.body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: #0f0f0f;
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        &.hover-underline {
+          font-size: 35px;
+          color: #1b1528;
+          position: relative;
+          display: inline-block;
+          padding: 10px 0px;
+          box-sizing: border-box;
+        }
+
+        &.hover-underline::after,
+        &.hover-underline::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(to right, #7956a6, #91d6ed);
+          bottom: -5px;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 1s ease-out;
+        }
+
+        &.hover-underline::before {
+          top: -5px;
+          transform-origin: left;
+        }
+
+        &.hover-underline:hover::after,
+        &.hover-underline:hover::before {
+          transition: transform 2s ease-out;
+        }
+        &.hover-underline.active::after,
+        &.hover-underline.active::before {
+          transform: scaleX(1);
+        }
+      }
+      .box {
+        input {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          background-color: #f7f7f7;
+          font-family: Albert;
+          font-size: 20px;
+          font-weight: 500;
+          padding: 20px 50px;
+          box-sizing: border-box;
+          border: unset;
+          border-radius: 16px;
+
+          &::placeholder {
+            color: #c3c3c3;
+            position: relative;
+            bottom: 40%;
+          }
+          &.message {
+            height: 30vh;
+            padding: 20px;
+          }
+        }
+        img {
+          position: absolute;
+          padding-left: 14px;
+          padding-top: 20px;
+          box-sizing: border-box;
+          z-index: 99;
+        }
+      }
+    }
+  }
+}

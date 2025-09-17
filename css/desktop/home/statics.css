@@ -52,7 +52,7 @@ padding: unset;
         
     }
     .media {
-      width: 70%;
+      width: 60%;
       height: auto;
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -60,7 +60,7 @@ padding: unset;
       .sites{
         width: fit-content;
         height: 100%;
-        padding: 20px 60px;
+        padding: 20px;
         justify-content: center;
         align-items: center;
         &:hover{
@@ -73,7 +73,16 @@ padding: unset;
           }
         }
         a{
-
+          font-family: Albert;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 500;
+          color: #1b1528;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          flex-flow: row nowrap;
           img{
 
 

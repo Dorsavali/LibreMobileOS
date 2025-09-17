@@ -1,4 +1,4 @@
-/*home page */
+/*home*/
 @import url("./home/header.css");
 @import url("./home/landing.css");
 @import url("./home/supDevice.css");
@@ -6,7 +6,17 @@
 @import url("./home/statics.css");
 @import url("./home/compatible.css");
 @import url("./home/footer.css");
-/*legal page*/
+/*legal*/
 @import url("./legal/text.css");
-/*enterprise page*/
+/*enterprise*/
 @import url("./enterprise/landingPage.css");
+/*about*/
+@import url("./about/about.css");
+@import url("./about/vision.css");
+@import url("./about/future.css");
+@import url("./about/target.css");
+@import url("./about/service.css");
+@import url("./about/history.css");
+@import url("./about/team.css");
+@import url("./about/infrastructures.css");
+@import url("./about/contact.css");
