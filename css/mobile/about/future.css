@@ -73,7 +73,7 @@ box-sizing: border-box;
       }
     }
     .description {
-      width: 95%;
+      width: 100%;
       font-family: Albert;
       font-size: 18px;
       font-weight: 700;

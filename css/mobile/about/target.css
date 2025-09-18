@@ -1,32 +1,21 @@
 .target-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding: 20px 50px;
+  box-sizing: border-box;
   .ourtarget {
-    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     .title {
-      text-align: center;
-      font-family: Albert;
-      font-weight: 700;
-      color: #1b1528;
-      &.body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #0f0f0f;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
       &.hover-underline {
-        font-size: 35px;
+        text-align: center;
+        font-family: Albert;
+        font-weight: 700;
+        font-size: 25px;
         color: #1b1528;
         position: relative;
         display: inline-block;
@@ -63,29 +52,28 @@
       }
     }
     .container {
-      width: 95%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      gap: 30px;
       .card {
         background: #ffffff;
-        margin: 20px;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-        padding: 40px;
+        padding: 20px;
         box-sizing: border-box;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: start;
-        gap: 16px;
+        gap: 20px;
         .subject {
           font-family: Albert;
           font-weight: 700;
           color: #1b1528;
-          font-size: 20px;
+          font-size: 21px;
         }
         .content {
           display: flex;
