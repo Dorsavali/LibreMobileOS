@@ -1,35 +1,21 @@
 .services-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding: 20px 50px;
+  box-sizing: border-box;
   .ourservices {
-    width: 95%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 16px;
+    gap: 20px;
     .title {
-      text-align: center;
-      font-family: Albert;
-      font-weight: 700;
-      color: #1b1528;
-      &.body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #0f0f0f;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
       &.hover-underline {
-        font-size: 35px;
+        text-align: center;
+        font-family: Albert;
+        font-weight: 700;
+        font-size: 25px;
         color: #1b1528;
         position: relative;
         display: inline-block;
@@ -65,20 +51,20 @@
         transform: scaleX(1);
       }
     }
-    .groupFeatures {
+    .groupServices {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       gap: 10px;
-      .feature {
-        width: 25%;
-        height: 38vh;
+      .service {
+        transition: 500ms;
         display: flex;
         flex-flow: column nowrap;
         justify-content: start;
         align-items: center;
         background-color: rgb(248, 241, 246);
+        border: 0.5px solid rgb(248, 241, 246);
         border-radius: 24px;
         gap: 16px;
         padding: 30px;
@@ -88,6 +74,7 @@
           font-size: 22px;
           font-weight: 600;
           color: #1b1528;
+          text-align: center;
         }
         .description {
           font-family: Albert;
@@ -95,7 +82,7 @@
           font-weight: 400;
           line-height: 1.5;
           color: #1b1528;
-          text-align: center;
+          text-align: left;
         }
         &:hover {
           background-color: #dcdaf5;

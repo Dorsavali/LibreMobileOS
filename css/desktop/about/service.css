@@ -1,105 +1,44 @@
 .services-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 50px;
   .ourservices {
-    width: 95%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 16px;
+    gap: 30px;
+    padding: unset;
     .title {
-      text-align: center;
-      font-family: Albert;
-      font-weight: 700;
-      color: #1b1528;
-      &.body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #0f0f0f;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
       &.hover-underline {
         font-size: 35px;
-        color: #1b1528;
-        position: relative;
-        display: inline-block;
-        padding: 10px 0px;
-        box-sizing: border-box;
       }
 
       &.hover-underline::after,
       &.hover-underline::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, #7956a6, #91d6ed);
-        bottom: -5px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 1s ease-out;
       }
 
       &.hover-underline::before {
-        top: -5px;
-        transform-origin: left;
       }
 
       &.hover-underline:hover::after,
       &.hover-underline:hover::before {
-        transition: transform 2s ease-out;
       }
       &.hover-underline.active::after,
       &.hover-underline.active::before {
-        transform: scaleX(1);
       }
     }
-    .groupFeatures {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-flow: row nowrap;
+    .groupServices {
+      width: 100%;
+
       gap: 10px;
-      .feature {
-        width: 25%;
-        height: 38vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: start;
-        align-items: center;
-        background-color: rgb(248, 241, 246);
-        border-radius: 24px;
-        gap: 16px;
-        padding: 30px;
-        box-sizing: border-box;
+      .service {
+        width: 300px;
+        height: 220px;
+        padding: 20px;
+
         .title {
-          font-family: Albert;
-          font-size: 22px;
-          font-weight: 600;
-          color: #1b1528;
+          font-size: 20px;
         }
         .description {
-          font-family: Albert;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #1b1528;
-          text-align: center;
+          font-size: 14px;
         }
         &:hover {
-          background-color: #dcdaf5;
-          border: 0.5px solid black;
         }
       }
     }
