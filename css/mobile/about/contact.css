@@ -1,48 +1,35 @@
 .contact-container {
   display: flex;
   flex-flow: column nowrap;
-  padding: 64px 100px;
+  padding: 50px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   gap: 16px;
   .contact {
-    width: 80%;
+    width: fit-content;
     display: flex;
-    flex-flow: row nowrap;
-
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
-     border-radius: 16px;
+    border-radius: 16px;
     border: 0.8px solid #7956a6;
     .image {
-      width: 55%;
+      width: 200px;
     }
     .inputs {
-      width: 45%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
-      padding: 0px 50px;
+      padding: 20px;
       box-sizing: border-box;
       gap: 30px;
       .title {
-        width: fit-content;
-        text-align: center;
-        font-family: Albert;
-        font-weight: 700;
-        color: #1b1528;
-        &.body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background: #0f0f0f;
-          margin: 0;
-          font-family: Arial, sans-serif;
-        }
-
         &.hover-underline {
-          font-size: 35px;
+          text-align: center;
+          font-family: Albert;
+          font-weight: 700;
+          font-size: 2cap;
           color: #1b1528;
           position: relative;
           display: inline-block;
