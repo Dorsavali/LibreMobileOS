@@ -2,22 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 50px;
+  box-sizing: border-box;
   .team {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding: 64px 100px;
-    box-sizing: border-box;
+    gap: 20px;
     .title {
-      text-align: center;
-      font-family: Albert;
-      font-weight: 700;
-      color: #1b1528;
       &.hover-underline {
-        font-size: 35px;
+        text-align: center;
+        font-family: Albert;
+        font-weight: 700;
+        font-size: 25px;
         color: #1b1528;
         position: relative;
         display: inline-block;
@@ -56,13 +55,12 @@
     .cards {
       width: 100%;
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
+      flex-flow: row wrap;
       align-items: center;
+      gap: 30px;
       .flip-card {
-        background-color: transparent;
-        width: 16vw;
-        height: 42vh;
+        width: 100%;
+        height: 36vh;
         perspective: 1000px;
         font-family: sans-serif;
         .flip-card-inner {
@@ -110,7 +108,8 @@
             color: rgb(0, 0, 0);
             justify-content: start;
             img {
-              width: 80%;
+              width: 200px;
+              height: 200px;
               border-radius: 16px;
             }
           }
@@ -123,7 +122,8 @@
             flex-flow: row wrap;
             justify-content: center;
             img {
-              width: 30%;
+              width: 80px;
+              height: 80px;
               background-color: #ffffff;
               border-radius: 16px;
               box-sizing: border-box;
