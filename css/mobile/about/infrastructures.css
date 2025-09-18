@@ -1,24 +1,22 @@
 .infrastructures-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 64px 100px;
+  padding: 20px 50px;
   box-sizing: border-box;
   .infrastructures {
-    width: 95%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
     .title {
-      text-align: center;
-      font-family: Albert;
-      font-weight: 700;
-      color: #1b1528;
+
       &.hover-underline {
-        font-size: 35px;
+        text-align: center;
+        font-family: Albert;
+        font-weight: 700;
+        font-size: 25px;
         color: #1b1528;
         position: relative;
         display: inline-block;
@@ -63,7 +61,7 @@
       .description {
         font-family: Albert;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 18px;
         color: #1b1528;
       }
       ul {
@@ -73,7 +71,7 @@
             box-sizing: border-box;
             font-family: Albert;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
             color: #3e217d;
             p{
                 padding: 5px 0px;
