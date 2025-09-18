@@ -24,12 +24,12 @@
       }
     }
     .cards {
-      justify-content: space-between;
+
 
       .flip-card {
         background-color: transparent;
-        width: 16vw;
-        height: 42vh;
+        width: 250px;
+        height: 300px;
 
         .flip-card-inner {
           .flip-card-front,
