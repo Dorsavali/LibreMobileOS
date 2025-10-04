@@ -24,6 +24,7 @@
     height: 55px;
     overflow-x: auto;
     overflow-y: hidden;
+    padding: 5px;
     .feature-item {
       display: flex;
       flex-direction: column;
@@ -45,6 +46,7 @@ box-sizing: border-box;
           border: 1px solid #7956a6;
           color: white;
           box-sizing: border-box;
+          user-select: none;
         }
       }
 
