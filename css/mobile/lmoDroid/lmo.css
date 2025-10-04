@@ -18,7 +18,7 @@
     display: flex;
     justify-content: start;
     gap: 20px;
-  user-select: none;
+    user-select: none;
     flex-flow: row nowrap;
     scroll-behavior: smooth;
     height: 55px;
@@ -40,7 +40,7 @@
         padding: 10px;
         color: #1b1528;
         transition: 300ms;
-box-sizing: border-box;
+        box-sizing: border-box;
         &:hover {
           background-color: #7956a6;
           border: 1px solid #7956a6;
@@ -53,7 +53,6 @@ box-sizing: border-box;
       &.active {
         transform: scale(1.1);
         opacity: 1;
-
         span {
           background-color: #7956a6;
           color: #fff;
@@ -62,7 +61,6 @@ box-sizing: border-box;
     }
   }
 
-  
   .feature-content {
     display: none;
     opacity: 0;
@@ -70,28 +68,29 @@ box-sizing: border-box;
     transition: all 0.6s ease;
     pointer-events: none;
     margin-top: 20px;
-   h3{
-    width: 100%;
-    font-size: 25px;
-    font-family: Albert;
-    text-align: left;
-    color: #1b1528;
-    margin-bottom: 10px;
-   }
-   h5{
-    width: 100%;
-    font-size: 16px;
-    font-family: Albert;
-    font-weight: 400;
-    text-align: left;
-    color: #1b1528;
-    margin-bottom: 20px;
-   }
+    h3 {
+      width: 100%;
+      font-size: 25px;
+      font-family: Albert;
+      text-align: left;
+      color: #1b1528;
+      margin-bottom: 10px;
+    }
+    h5 {
+      width: 100%;
+      font-size: 16px;
+      font-family: Albert;
+      font-weight: 400;
+      text-align: left;
+      color: #1b1528;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
     &.active {
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: start; 
-      gap: 10px; 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 10px;
       opacity: 1;
       transform: translateY(0);
     }
@@ -126,7 +125,6 @@ box-sizing: border-box;
         line-height: 1.6;
       }
 
-      
       &:nth-child(even) .content-card {
         flex-direction: row-reverse;
         text-align: right;
