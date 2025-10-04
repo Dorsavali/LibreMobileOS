@@ -45,14 +45,14 @@
         <div class="menu">
           <nav>
             <ul>
-              <li class="active-item">
-                <a href="./" class="disable-link active">Home</a>
+              <li >
+                <a href="./" >Home</a>
               </li>
               <li>
                 <a href="./legal.html">Legal</a>
               </li>
-              <li>
-                <a href="./lmoDroid.html">LMODroid</a>
+              <li class="active-item">
+                <a href="./lmoDroid.html" class="disable-link active">LMODroid</a>
               </li>
               <li>
                 <a href="./enterprise.html">Enterprise</a>
@@ -329,17 +329,26 @@
   <script>
     const featureItems = document.querySelectorAll(".feature-item");
     const contents = document.querySelectorAll(".feature-content");
-
-    featureItems.forEach((item) => {
+    
+    function activateTab(index) {
+      featureItems.forEach((i) => i.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
+    
+      featureItems[index].classList.add("active");
+      contents[index].classList.add("active");
+    }
+    
+    // فعال کردن اولین تب هنگام لود صفحه
+    document.addEventListener("DOMContentLoaded", () => {
+      activateTab(0);
+    });
+    
+    // هنگام کلیک روی هر تب
+    featureItems.forEach((item, index) => {
       item.addEventListener("click", () => {
-      
-        featureItems.forEach((i) => i.classList.remove("active"));
-        contents.forEach((c) => c.classList.remove("active"));
-
-        item.classList.add("active");
-        const target = item.getAttribute("data-target");
-        document.getElementById(target).classList.add("active");
+        activateTab(index);
       });
     });
-  </script>
+    </script>
+    
 </html>
