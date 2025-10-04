@@ -332,11 +332,10 @@
 
     featureItems.forEach((item) => {
       item.addEventListener("click", () => {
-        // غیرفعال کردن همه
+      
         featureItems.forEach((i) => i.classList.remove("active"));
         contents.forEach((c) => c.classList.remove("active"));
 
-        // فعال کردن مورد انتخاب‌شده
         item.classList.add("active");
         const target = item.getAttribute("data-target");
         document.getElementById(target).classList.add("active");

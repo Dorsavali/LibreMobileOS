@@ -15,7 +15,6 @@
     font-family: Albert;
   }
 
-  /* منو آیکون‌ها */
   .features-menu {
     display: flex;
     justify-content: center;
@@ -59,7 +58,7 @@
     }
   }
 
-  /* بخش محتوا */
+  
   .feature-content {
     display: none;
     opacity: 0;
@@ -120,7 +119,7 @@
         line-height: 1.6;
       }
 
-      /* برای اینکه بخش‌ها یکی در میون عکس راست/چپ بیان */
+      
       &:nth-child(even) .content-card {
         flex-direction: row-reverse;
         text-align: right;
