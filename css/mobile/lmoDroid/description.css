@@ -1,0 +1,60 @@
+.lmo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    .title{
+        font-family: Albert;
+        font-size: 30px;
+        font-weight: 600;
+        color: #1b1528;
+    }
+    .description{
+        font-family: Albert;
+        font-size: 16px;
+        font-weight: 300;
+        color: #1b1528;
+        line-height: 2;
+        h1{
+            font-size: 20px;
+            color: #1b1528;
+            font-family: Albert;
+        }
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        a {
+            text-decoration: none;
+            button {
+              all: unset;
+              padding: 8px;
+              border-radius: 41px;
+              font-family: Albert;
+              font-weight: 500;
+              font-size: 14px;
+              color: #ffffff;
+              cursor: pointer;
+              text-transform: capitalize;
+              transition: 500ms;
+              background-color: #7956a6;
+              text-decoration: none;
+              border: 2px solid #7956a6;
+              &:hover {
+                transform: scale(1.1);
+                background-color: #efecf4;
+                border: 2px solid #7956a6;
+                color: #7956a6;
+                box-sizing: border-box;
+              }
+            }
+          }
+    }
+}

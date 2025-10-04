@@ -20,3 +20,7 @@
 @import url("./about/team.css");
 @import url("./about/infrastructures.css");
 @import url("./about/contact.css");
+/*lmodroid*/
+@import url("./lmoDroid/description.css");
+
+@import url("./lmoDroid/lmo.css");

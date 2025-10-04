@@ -329,26 +329,17 @@
   <script>
     const featureItems = document.querySelectorAll(".feature-item");
     const contents = document.querySelectorAll(".feature-content");
-    
-    function activateTab(index) {
-      featureItems.forEach((i) => i.classList.remove("active"));
-      contents.forEach((c) => c.classList.remove("active"));
-    
-      featureItems[index].classList.add("active");
-      contents[index].classList.add("active");
-    }
-    
-    // فعال کردن اولین تب هنگام لود صفحه
-    document.addEventListener("DOMContentLoaded", () => {
-      activateTab(0);
-    });
-    
-    // هنگام کلیک روی هر تب
-    featureItems.forEach((item, index) => {
+
+    featureItems.forEach((item) => {
       item.addEventListener("click", () => {
-        activateTab(index);
+      
+        featureItems.forEach((i) => i.classList.remove("active"));
+        contents.forEach((c) => c.classList.remove("active"));
+
+        item.classList.add("active");
+        const target = item.getAttribute("data-target");
+        document.getElementById(target).classList.add("active");
       });
     });
-    </script>
-    
+  </script>
 </html>
