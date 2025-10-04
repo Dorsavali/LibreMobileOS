@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibreMobileOS</title>
+    <link
+      rel="shortcut icon"
+      href="./images/LibreMobileOS (1) (1).svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- start header-->
+    <div class="header">
+      <label for="show" class="hamburger">
+        <img src="./images/essentials/menu.svg" alt="Menu" />
+      </label>
+      <div class="topHeader">
+        <div class="mobileHeader">
+          <div class="info">
+            <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
+            LibreMobileOS
+          </div>
+          <div class="contactBtn">
+            <a href="https://get.libremobileos.com/">
+              <button>Download</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="radio" name="menu" id="show" />
+    <input type="radio" name="menu" id="close" />
+
+    <label for="close" class="backdrop"></label>
+    <header>
+      <div class="logo">
+        <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
+        LibreMobileOS
+      </div>
+      <div class="menuItems">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li class="active-item">
+                <a href="./" class="disable-link active">Home</a>
+              </li>
+              <li>
+                <a href="./legal.html">Legal</a>
+              </li>
+              <li>
+                <a href="./lmoDroid.html">LMODroid</a>
+              </li>
+              <li>
+                <a href="./enterprise.html">Enterprise</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contactBtn">
+          <a href="https://get.libremobileos.com/">
+            <button>Download</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- end header-->
+    <!--start lmdroid description-->
+    <div class="lmo">
+      <div class="title">LMODroid</div>
+      <div class="description">
+        LMODroid is an AOSP-based mobile OS aiming to ease transition to
+        de-googled(*) Android use-cases, while also supporting using Google
+        services. Additionally, we want to make everyday experience better with
+        useful features *The term de-googled is complicated, as AOSP by itself
+        is by Google. We aim to reduce Google's data collection on mobile
+        devices and make active efforts to remove contacts to Google servers and
+        document more regarding this topic, but we value application
+        compatibility over total Google avoidance.
+
+        <h1>Quick look of some features we provide:</h1>
+      </div>
+      <div class="button">
+        <a href="#"><button>Add Device</button></a>
+        <a href="#"><button>Bug Report</button></a>
+      </div>
+    </div>
+    <!--end lmdroid description-->
+
+    <!-- start content section -->
+    <section class="features-section">
+      <h1 class="main-title">Key Features of LibreMobileOS</h1>
+      <p class="description">
+        LibreMobileOS brings security, design, and innovation together in one
+        seamless experience.
+      </p>
+
+      <div class="features-menu">
+        <div class="feature-item" data-target="highlights">
+          <span>Highlights</span>
+        </div>
+        <div class="feature-item" data-target="security">
+          <span>Security</span>
+        </div>
+        <div class="feature-item" data-target="design">
+          <span>Design</span>
+        </div>
+        <div class="feature-item" data-target="gestures">
+          <span>Gestures</span>
+        </div>
+        <div class="feature-item" data-target="misc">
+          <span>Miscellaneous</span>
+        </div>
+      </div>
+
+      <!-- محتواها -->
+      <div class="feature-content active" id="highlights">
+        <h3>Highlights</h3>
+        <div class="feature-block">
+          <img src="./images/lmodroid/highlight1.png" alt="Desktop Mode" />
+          <h3>Desktop Mode</h3>
+          <p>Powerful desktop experience from your phone</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/lock.png" alt="Desktop Mode" />
+          <h3>App Lock</h3>
+          <p>Lock away sensitive information with extra protection</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/game.png" alt="Desktop Mode" />
+          <h3>Game Space</h3>
+          <p>Dashboard providing UI for the Android Game Mode API</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/micro.png" alt="Desktop Mode" />
+          <h3>MicroG or GMS</h3>
+          <p>Full compatibility with microG or official Google Play Services</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/parallel.png" alt="Desktop Mode" />
+          <h3>Parallel Spaces</h3>
+          <p>
+            Allow running multiple instances of the same application in
+            parallel.
+          </p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/parallel.png" alt="Desktop Mode" />
+          <h3>Glide Keyboard</h3>
+          <p>Gesture Typing on AOSP keyboard</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/parallel.png" alt="Desktop Mode" />
+          <h3>Sounds UX</h3>
+          <p>InCall-Vibration, Per SIM Ringtone, Per App Volume</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/parallel.png" alt="Desktop Mode" />
+          <h3>Hotspot manager</h3>
+          <p>List connected devices and block connections</p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/parallel.png" alt="Desktop Mode" />
+          <h3>Backup</h3>
+          <p>
+            Backup and Restore Solution for Application data to Cloud or Drive
+          </p>
+        </div>
+        <div class="feature-block">
+          <img src="./images/lmodroid/parallel.png" alt="Desktop Mode" />
+          <h3>Neo Wellbeing</h3>
+          <p>Solution for controlling your digital habits (Coming soon)</p>
+        </div>
+      </div>
+
+      <div class="feature-content" id="security">
+        <h3>Security</h3>
+        <h5>Scrambled PIN input, Custom Patten size, USB Port Control, Enforced SELinux, DNS and Connectivity Check Servers, Global VPN on all users, Background Data switch, App Hide, Panic Trigger and more</h5>
+        <div class="feature-block">
+            <img src="./images/lmodroid/screenlock.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/vpn.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/developer.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/data.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/appinfo.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/emergeancy.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/reboot.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/newuser.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/dns.png" alt="Desktop Mode" />
+          </div>
+
+          <div class="feature-block">
+            <img src="./images/lmodroid/usb.png" alt="Desktop Mode" />
+          </div>
+      </div>
+
+      <div class="feature-content" id="design">
+        <h3>Design</h3>
+        <h5>Personalization with Full Control over Fonts, Colors and UI customizations and Redesigned AOSP apps</h5>
+        <div class="feature-block">
+            <img src="./images/lmodroid/wallapper.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/theme.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/screen.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/erfanabdi.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/message.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/clock.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/calcuelator.png" alt="Desktop Mode" />
+          </div>
+
+          <div class="feature-block">
+            <img src="./images/lmodroid/recents.png" alt="Desktop Mode" />
+          </div>
+      </div>
+
+      <div class="feature-content" id="gestures">
+        <h3>Gestures</h3>
+        <h5>Three Finger Swipe to screenshot, Pocket Mode, Ambient Display, LockScreen Shortcuts and more</h5>
+        <div class="feature-block">
+            <img src="./images/lmodroid/screenshot.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/pockety.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/display.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/lock.png" alt="Desktop Mode" />
+          </div>
+      </div>
+
+      <div class="feature-content" id="misc">
+        <h3>Miscellaneous</h3>
+        <div class="feature-block">
+            <img src="./images/lmodroid/text-to-speech.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/buttons.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/status bar.png" alt="Desktop Mode" />
+          </div>
+          <div class="feature-block">
+            <img src="./images/lmodroid/equlizer.png" alt="Desktop Mode" />
+          </div>
+        
+      </div>
+    </section>
+    <!-- end content section -->
+
+    <!--start footer-->
+    <footer>
+      <div class="footer">
+        <div class="left">
+          <div class="logo">
+            <img src="./images/footer/LibreMobileOSlogo.svg" alt="logo" />
+          </div>
+          <div class="name">LibreMobileOS</div>
+        </div>
+        <div class="right">
+          <div class="social">
+            <div class="mediaLink">
+              <a href="https://www.linkedin.com/company/libremobileos">
+                <img src="./images/footer/Linkedin-logo.svg" alt="linkdin" />
+              </a>
+            </div>
+            <div class="mediaLink">
+              <a href="https://matrix.to/#/%23lmodroid:libremobileos.com">
+                <img src="./images/footer/Element-logo.svg" alt="matrix" />
+              </a>
+            </div>
+            <div class="mediaLink">
+              <a href="https://t.me/LMODroid">
+                <img src="./images/footer/telegram.svg" alt="telegram" />
+              </a>
+            </div>
+            <div class="mediaLink">
+              <a href="https://x.com/libremobileos">
+                <img src="./images/footer/X-logo.svg" alt="x" />
+              </a>
+            </div>
+          </div>
+          <div class="copyright">
+            © 2025 LibreMobileOS . All Rights Reserved
+          </div>
+          <div class="designer">
+            Designed and developed by
+            <a href="https://github.com/Dorsavali">DorsaVali</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+  </body>
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const featureItems = document.querySelectorAll(".feature-item");
+    const contents = document.querySelectorAll(".feature-content");
+
+    featureItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // غیرفعال کردن همه
+        featureItems.forEach((i) => i.classList.remove("active"));
+        contents.forEach((c) => c.classList.remove("active"));
+
+        // فعال کردن مورد انتخاب‌شده
+        item.classList.add("active");
+        const target = item.getAttribute("data-target");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+  </script>
+</html>
