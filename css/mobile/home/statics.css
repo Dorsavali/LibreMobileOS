@@ -28,6 +28,8 @@
         display: inline-block;
         padding: 10px 0px;
         box-sizing: border-box;
+        text-align: center;
+        line-height: 1.4;
       }
 
       .hover-underline::after,

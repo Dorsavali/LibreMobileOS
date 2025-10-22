@@ -1,17 +1,19 @@
 .text-container {
-  padding: unset;
+  padding:  50px;
   gap: unset;
   .title {
     width: 95%;
     font-size: 40px;
-    padding: 40px 0px;
-    text-align: center;
+    padding: unset;
+    box-sizing: border-box;
+    text-align: left;
   }
   .description {
     width: 95%;
+    margin: 20px;
     p {
-      padding: 20px;
-      text-align: center;
+      padding: unset;
+      text-align: left;
       box-sizing: border-box;
     }
   }

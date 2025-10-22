@@ -1,18 +1,17 @@
 .enterprise-container {
-  padding: unset;
+  padding:50px  80px;
+  box-sizing: border-box;
   gap: unset;
   .title {
     width: 95%;
     font-size: 40px;
-    text-align: center;
     padding-top: 40px;
   }
   .description {
     width: 95%;
     p {
       font-size: 20px;
-      padding: 20px;
-      box-sizing: border-box;
+      margin-top: 20px;
       a {
         font-size: 20px;
       }
