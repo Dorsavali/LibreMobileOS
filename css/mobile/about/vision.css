@@ -58,6 +58,7 @@
       flex-flow: row wrap;
       gap: 20px;
       .card {
+        width: 100%;
         background: #ffffff;
         border-radius: 40px;
         overflow: hidden;
@@ -66,19 +67,20 @@
         &:hover {
           transform: unset;
         }
+        .content {
+          
+          padding: 20px;
+          box-sizing: border-box;
+          p {
+            font-family: Albert;
+            font-size: 16px;
+            color: #666;
+            line-height: 2;
+            text-align: left;
+          }
+        }
       }
     }
 
-    .content {
-      p {
-        padding: 20px;
-        box-sizing: border-box;
-        font-family: Albert;
-        font-size: 16px;
-        color: #666;
-        line-height: 2;
-        text-align: left;
-      }
-    }
   }
 }
