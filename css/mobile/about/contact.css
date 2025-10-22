@@ -96,6 +96,28 @@
           box-sizing: border-box;
           z-index: 99;
         }
+        
+      }
+      .sumbitBtn{
+        align-self: center;
+        width: fit-content;
+        background-color: #E4DDED;
+        font-family: Albert;
+        font-size: 16px;
+        padding:10px 20px;
+        box-sizing: border-box;
+        font-weight: 500;
+        border: unset;
+        border-radius: 41px;
+        border: 1px solid #E4DDED;
+        color: #1b1528;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover{
+             background-color: #ffffff;
+
+             
+        }
       }
     }
   }
