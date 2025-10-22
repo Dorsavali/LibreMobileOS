@@ -481,10 +481,12 @@ close.addEventListener("change", () => {
       observer.observe(counter);
     });
   </script>
+
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1, 
+    slidesPerView: 1,
     spaceBetween: 0,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
