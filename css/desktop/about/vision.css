@@ -2,46 +2,37 @@
   width: 100%;
   padding-top: 50px;
   .ourVision {
-     
     .title {
       &.hover-underline {
-
       }
 
       &.hover-underline::after,
       &.hover-underline::before {
-
       }
 
       &.hover-underline::before {
-
       }
 
       &.hover-underline:hover::after,
       &.hover-underline:hover::before {
-
       }
       &.hover-underline.active::after,
       &.hover-underline.active::before {
-
       }
     }
-    .container {
+
+    .container{
       width: 95%;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-      .card {
-        width: 45%;
-        .content {
-          min-height: 140px;      
-          p {
-          }
-        }
+
+      flex-flow: row nowrap;
+      gap: 25px;
+
+      .content{
+        width: 50%;
+       min-height: 240px ; 
+        font-size: 18px;
+
       }
     }
-
   }
 }
