@@ -25,21 +25,20 @@
     }
     .groupServices {
       width: 100%;
-
-      gap: 10px;
+      gap: 35px;
       .service {
         width: 300px;
-        height: 220px;
+        height: 290px;
         padding: 20px;
 
         .title {
           font-size: 20px;
         }
         .description {
-          font-size: 14px;
+          font-size: 16px;
+          line-height: 1.7;
         }
-        &:hover {
-        }
+       
       }
     }
   }
