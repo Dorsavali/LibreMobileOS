@@ -107,7 +107,7 @@
       </p>
 
       <div class="features-menu">
-        <div class="feature-item" data-target="highlights">
+        <div class="feature-item active" data-target="highlights">
           <span>Highlights</span>
         </div>
         <div class="feature-item" data-target="security">
@@ -376,17 +376,30 @@
   <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
   <script>
     const featureItems = document.querySelectorAll(".feature-item");
-    const contents = document.querySelectorAll(".feature-content");
+  const contents = document.querySelectorAll(".feature-content");
 
-    featureItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        featureItems.forEach((i) => i.classList.remove("active"));
-        contents.forEach((c) => c.classList.remove("active"));
 
-        item.classList.add("active");
-        const target = item.getAttribute("data-target");
-        document.getElementById(target).classList.add("active");
-      });
+  window.addEventListener("DOMContentLoaded", () => {
+    const defaultItem = document.querySelector('.feature-item[data-target="highlights"]');
+    const defaultContent = document.getElementById("highlights");
+    if (defaultItem && defaultContent) {
+      defaultItem.classList.add("active");
+      defaultContent.classList.add("active");
+    }
+  });
+
+
+  featureItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // حذف حالت فعال از همه آیتم‌ها و محتواها
+      featureItems.forEach((i) => i.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
+
+
+      item.classList.add("active");
+      const target = item.getAttribute("data-target");
+      document.getElementById(target).classList.add("active");
     });
+  });
   </script>
 </html>
