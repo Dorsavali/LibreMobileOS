@@ -1,5 +1,6 @@
 .history {
   padding: 64px 100px;
+  padding-bottom: unset;
   gap: 16px;
   .title {
 
@@ -29,12 +30,12 @@
   .description {
 
     font-size: 16px;
-
+    padding: unset;
   }
   .image{
-
+    padding: unset;
     img{
-
+padding: unset;
         &.hidden-d{
         display: none;
         }

@@ -2,7 +2,7 @@
   .team {
     width: 95%;
     gap: 30px;
-    padding: 64px 100px;
+    padding: 0px 100px;
     box-sizing: border-box;
     .title {
       &.hover-underline {
