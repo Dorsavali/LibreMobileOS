@@ -35,9 +35,6 @@
       flex-flow: row wrap;
       .card {
         width: 45%;
-        &:hover {
-          transform: scale(1.1);
-        }
         .content {
           min-height: 140px;      
           p {
