@@ -109,57 +109,43 @@
     <!-- Donate Modal -->
     <div class="modal-overlay" id="donateModal">
       <div class="donate-box">
-        <h1>Support Our Open Source Work ❤️</h1>
-        <p>
-          Your donations help us keep development open, free, and
-          community-driven. Donations cover only our server and infrastructure
-          costs.
-        </p>
-
+        <h1>Support LibreMobileOS ❤️</h1>
+        <p>Your donations help us keep development open, free, and community-driven. Donations cover only our server and infrastructure costs.</p>
+    
         <h2>💳 PayPal</h2>
         <p>Donate securely via PayPal:</p>
-        <a href="https://paypal.me/khodeerfan" target="_blank" class="button"
-          >Donate via PayPal</a
-        >
-
+        <a href="https://paypal.me/khodeerfan" target="_blank" class="button">Donate via PayPal</a>
+    
         <h2>💛 Liberapay</h2>
         <p>Recurring or anonymous donations via Liberapay:</p>
         <a href="https://liberapay.com/erfanoabdi/donate" target="_blank">
-          <img
-            src="https://liberapay.com/assets/widgets/donate.svg"
-            alt="Donate via Liberapay"
-          />
+          <img src="https://liberapay.com/assets/widgets/donate.svg" alt="Donate via Liberapay">
         </a>
-
-        <h2>💙 UPI ID</h2>
-        <p>Recurring or anonymous donations via Liberapay:</p>
-        <a href="dhinalogu@okhdfcbank" target="_blank">
-
-        </a>
-
-        
-
+    
         <h2>🪙 Cryptocurrency</h2>
         <div class="crypto">
-          <p>
-            <strong>Bitcoin (BTC):</strong>
-            <code>12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa</code>
-          </p>
-          <p>
-            <strong>Ethereum (ETH | ERC20):</strong>
-            <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code>
-          </p>
-          <p>
-            <strong>Tether (USDT | TRC20):</strong>
-            <code>TLX6giNCmTbkqURcdSasuRTFUzYpntSegG</code>
-          </p>
-          <p>
-            <strong>Tether (USDT | BSC or ERC20):</strong>
-            <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code>
-          </p>
+          <p><strong>Bitcoin (BTC):</strong> <code>12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa</code></p>
+          <div id="btc-qr" class="qr"></div>
+    
+          <p><strong>Ethereum (ETH / ERC20):</strong> <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code></p>
+          <div id="eth-qr" class="qr"></div>
+    
+          <p><strong>USDT (TRC20):</strong> <code>TLX6giNCmTbkqURcdSasuRTFUzYpntSegG</code></p>
+          <div id="usdt-trc-qr" class="qr"></div>
+    
+          <p><strong>USDT (BSC / ERC20):</strong> <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code></p>
+          <div id="usdt-bsc-qr" class="qr"></div>
         </div>
-
-        <p>Thank you for helping make open source better for everyone! 🙏</p>
+    
+        <h2>📱 UPI (India)</h2>
+        <div class="upi">
+          <p><strong>UPI ID:</strong> <code>dhinalogu@okhdfcbank</code></p>
+          <p>Tap or scan below to donate directly via UPI:</p>
+          <a href="upi://pay?pa=dhinalogu@okhdfcbank&pn=LibreMobileOS&cu=INR" class="button">Donate via UPI</a>
+          <div id="upi-qr" class="qr"></div>
+        </div>
+    
+        <p>Thank you for helping us make open-source better for everyone! 🙏</p>
       </div>
     </div>
     <!-- End Donate Modal -->
@@ -632,6 +618,27 @@
     if (e.key === 'Escape') {donateModal.classList.remove('active');
     document.body.style.overflow = "auto";}
   });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+<script>
+  const qrData = {
+    "btc-qr": "bitcoin:12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa",
+    "eth-qr": "ethereum:0x220ee927da57bb117d9c887c4d5ed312a0270d06",
+    "usdt-trc-qr": "tron:TLX6giNCmTbkqURcdSasuRTFUzYpntSegG",
+    "usdt-bsc-qr": "ethereum:0x220ee927da57bb117d9c887c4d5ed312a0270d06",
+    "upi-qr": "upi://pay?pa=dhinalogu@okhdfcbank&pn=LibreMobileOS&cu=INR"
+  };
+  for (const id in qrData) {
+    const el = document.getElementById(id);
+    if (el) {
+      const qr = new QRious({
+        element: document.createElement('canvas'),
+        value: qrData[id],
+        size: 130
+      });
+      el.appendChild(qr.element);
+    }
+  }
 </script>
 
 </html>
