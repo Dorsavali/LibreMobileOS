@@ -115,8 +115,8 @@ code {
     bottom: 20px;
     right: 20px;
     z-index: 10000;
-    display: none; /* اول مخفی */
-    background-color: #3e0a82;
+    display: none; 
+    background-color: #370d6e;
     color: white;
     border: none;
     border-radius: 50%;
@@ -133,7 +133,7 @@ code {
   }
   
   #scrollTopBtn:hover {
-    background-color: #5a3d8b;
+    background-color: #362553;
     transform: scale(1.1);
   }
   
