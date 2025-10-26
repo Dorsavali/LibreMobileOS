@@ -1,116 +1,138 @@
-@import "./mobile/mobile.css" only screen and (min-width:0);
-@import "./desktop/desktop.css" only screen and (min-width:992px);
+@import "./mobile/mobile.css" only screen and (min-width: 0);
+@import "./desktop/desktop.css" only screen and (min-width: 992px);
 
 @import url("./setting.css");
 .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
-    align-items: flex-start; 
-    overflow-y: auto; 
-    padding: 2rem 1rem; 
-  }
-  
-  .modal-overlay.active {
-    display: flex;
-  }
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
 
+.modal-overlay.active {
+  display: flex;
+}
 
-  h1, h2 {
-    color: #111;
+h1,
+h2 {
+  color: #111;
+}
+.donate-box {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 1rem auto;
+  font-family: Albert;
+  display: flex;
+  gap: 12px;
+  flex-flow: column nowrap;
+}
+a.button {
+  width: fit-content;
+  display: inline-block;
+  background: #3f7ba2;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  margin: 0.3rem 0;
+}
+a.button:hover {
+  background: #005c9e;
+}
+code {
+  background: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+}
+.crypto,
+.upi {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.crypto p,
+.upi p {
+  margin: 0.4rem 0;
+}
+.qr {
+  margin: 0.5rem 0 1rem;
+}
+.qr canvas {
+  border-radius: 0.5rem;
+  background: white;
+  padding: 0.3rem;
+}
+@media only screen and (max-width: 991px) {
+  .modal-overlay {
+    align-items: flex-start;
+    padding-top: 6rem;
   }
   .donate-box {
-    background: white;
-    padding: 1.5rem 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    max-width: 700px;
-    margin: 1rem auto;
-    font-family: Albert;
-    display: flex;
-    gap: 12px;
-    flex-flow: column nowrap;
+    max-width: 87%;
+    gap: 15px;
+    padding: 0.5rem;
+    box-sizing: border-box;
   }
+
   a.button {
-    width: fit-content;
-    display: inline-block;
-    background: #3f7ba2;
-    color: white;
-    text-decoration: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0.5rem;
-    margin: 0.3rem 0;
+    padding: 0.5rem 1rem;
   }
-  a.button:hover {
-    background: #005c9e;
+
+  .crypto {
+    gap: 20px;
+    padding: 0rem;
+    overflow: scroll;
+  }
+  .donate-box h1 {
+    color: #111;
+    font-size: 18px;
+  }
+  .donate-box h2 {
+    color: #111;
+    font-size: 16px;
+  }
+  .donate-box p {
+    color: #111;
+    font-size: 14px;
   }
   code {
     background: #eee;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.3rem;
+    padding: 0rem 0rem;
   }
-  .crypto, .upi {
-    background: #fafafa;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: none; /* اول مخفی */
+    background-color: #3e0a82;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
   }
-  .crypto p, .upi p {
-    margin: 0.4rem 0;
-  }
-  .qr {
-    margin: 0.5rem 0 1rem;
-  }
-  .qr canvas {
-    border-radius: 0.5rem;
-    background: white;
-    padding: 0.3rem;
-  }
-  @media only screen and (max-width: 991px) {
-    .modal-overlay {
-        align-items: flex-start; 
-        padding-top: 6rem; 
-      }
-    .donate-box {
-      max-width: 87%;     
-      gap: 15px;              
-      padding: 0.5rem ;
-      box-sizing: border-box;
-
-
-    }
   
-    a.button{
-      padding: 0.5rem 1rem;  
-    }
-  
-    .crypto {
-      gap: 20px;
-      padding: 0rem;
-      overflow:scroll;
-    }
-    .donate-box h1 {
-        color: #111;
-       font-size: 18px;
-       
-      }
-      .donate-box h2 {
-        color: #111;
-       font-size: 16px;
-       
-      }
-      .donate-box p {
-        color: #111;
-       font-size: 14px;
-       
-      }
-      code {
-        background: #eee;
-        padding: 0rem 0rem;
-        
-      }
+  #scrollTopBtn:hover {
+    background-color: #5a3d8b;
+    transform: scale(1.1);
   }
+  

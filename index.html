@@ -489,6 +489,8 @@
       </div>
     </footer>
     <!--end footer-->
+    <button id="scrollTopBtn" title="Go to top"><img src="./images/essentials/arrowUp.svg" alt="arrowUp"></button>
+
   </body>
   <script>
     const show = document.getElementById("show");
@@ -640,5 +642,25 @@
     }
   }
 </script>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
 
+// وقتی کاربر اسکرول کرد
+window.onscroll = function() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollBtn.style.display = "flex"; // دکمه ظاهر میشه
+  } else {
+    scrollBtn.style.display = "none"; // مخفی میشه
+  }
+};
+
+// وقتی دکمه کلیک شد
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // حرکت نرم به بالا
+  });
+});
+
+</script>
 </html>
