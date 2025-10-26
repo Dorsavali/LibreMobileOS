@@ -27,6 +27,7 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 12px;
+    user-select: none;
   }
   
   .donate-box h1 {
@@ -74,4 +75,36 @@
   @keyframes fadeIn {
     from {opacity: 0; transform: scale(0.9);}
     to {opacity: 1; transform: scale(1);}
+  }
+  @media only screen and (max-width: 991px) {
+    .donate-box {
+      max-width: 85%;     
+      gap: 15px;              
+      padding: 0.5rem ;
+      box-sizing: border-box;
+    }
+  
+    .donate-box .button {
+      padding: 0.5rem 1rem;  
+    }
+  
+    .crypto {
+      gap: 20px;
+      padding: 0rem;
+    }
+    .donate-box h1 {
+        color: #111;
+       font-size: 18px;
+       
+      }
+      .donate-box h2 {
+        color: #111;
+       font-size: 16px;
+       
+      }
+      .donate-box p {
+        color: #111;
+       font-size: 14px;
+       
+      }
   }
