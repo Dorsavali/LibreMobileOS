@@ -10,6 +10,9 @@
     z-index: 9999;
     justify-content: center;
     align-items: center;
+    align-items: flex-start; 
+    overflow-y: auto; 
+    padding: 2rem 1rem; 
   }
   
   .modal-overlay.active {
@@ -77,11 +80,17 @@
     to {opacity: 1; transform: scale(1);}
   }
   @media only screen and (max-width: 991px) {
+    .modal-overlay {
+        align-items: flex-start; 
+        padding-top: 5rem; 
+      }
     .donate-box {
-      max-width: 85%;     
+      max-width: 87%;     
       gap: 15px;              
       padding: 0.5rem ;
       box-sizing: border-box;
+
+
     }
   
     .donate-box .button {
@@ -91,6 +100,7 @@
     .crypto {
       gap: 20px;
       padding: 0rem;
+      overflow:scroll;
     }
     .donate-box h1 {
         color: #111;
@@ -106,5 +116,10 @@
         color: #111;
        font-size: 14px;
        
+      }
+      code {
+        background: #eee;
+        padding: 0rem 0rem;
+        
       }
   }
