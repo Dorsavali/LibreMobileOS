@@ -643,24 +643,26 @@
   }
 </script>
 <script>
-  const scrollBtn = document.getElementById("scrollTopBtn");
+const scrollBtn = document.getElementById("scrollTopBtn");
 
-// وقتی کاربر اسکرول کرد
-window.onscroll = function() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    scrollBtn.style.display = "flex"; // دکمه ظاهر میشه
+scrollBtn.style.display = "none";
+
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) { 
+    scrollBtn.style.display = "flex"; 
   } else {
-    scrollBtn.style.display = "none"; // مخفی میشه
+    scrollBtn.style.display = "none"; 
   }
-};
+});
 
-// وقتی دکمه کلیک شد
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth" // حرکت نرم به بالا
+    behavior: "smooth"
   });
 });
+
 
 </script>
 </html>
