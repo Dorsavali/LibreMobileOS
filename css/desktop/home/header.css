@@ -38,7 +38,8 @@ header {
     padding: 10px 20px;
     box-sizing: border-box;
     flex-flow: row nowrap;
-
+   gap: 16px;
+   align-items: center;
     .menu {
       nav {
         ul {
@@ -97,6 +98,28 @@ header {
         }
       }
     }
+    .donateBtn{
+      a{
+        text-decoration: none;
+
+        button{
+          width: unset;
+          height: unset;
+          padding: 10px 10px;
+          font-family: Albert;
+          font-size: 16px;
+        border: unset;
+          &:hover{
+            background-color: rgb(100, 42, 42);
+            color: rgb(255, 255, 255);
+            transform: unset;
+           border: unset;
+          }
+        }
+      }
+    }
+
+
   }
 
   label[for="close"] {

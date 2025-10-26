@@ -2,3 +2,76 @@
 @import "./desktop/desktop.css" only screen and (min-width:992px);
 
 @import url("./setting.css");
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-overlay.active {
+    display: flex;
+  }
+
+  .donate-box {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 1rem auto;
+    animation: fadeIn 0.3s ease;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+  }
+  
+  .donate-box h1 {
+    color: #111;
+    font-family: Albert;
+   
+  }
+  .donate-box h2 {
+    color: #111;
+    font-family: Albert;
+   
+  }
+  .donate-box p {
+    color: #111;
+    font-family: Albert;
+   
+  }
+  .donate-box .button {
+    display: inline-block;
+    background: #0070ba;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    margin: 0.3rem 0;
+    font-family: Albert;
+    &:hover{
+        background: #005c9e;
+    }
+  }
+  
+  code {
+    background: #eee;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+  }
+  .crypto {
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }

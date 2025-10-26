@@ -207,6 +207,36 @@ header {
         }
       }
     }
+    .donateBtn{
+      
+      a{
+        text-decoration: none;
+
+        button{
+          all: unset;
+          box-sizing: border-box;
+          padding: 7px 14px;
+          border-radius: 41px;
+          font-family: Albert;
+          font-weight: 500;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: red ;
+          color: white;
+          transition: 500ms;
+          border: 2px solid red;
+          &:hover{
+            background-color: white;
+            color: red;
+            transform: scale(1.1);
+            border: 2px solid red;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
   }
 }
 input#show:checked ~ header {
