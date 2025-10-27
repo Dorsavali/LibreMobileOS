@@ -23,6 +23,8 @@
     padding: 70px 0px;
     .card {
       width: 47%;
+     height: 130px;
+
       gap: 20px;
       padding: 20px;
       .titleAndImage {
