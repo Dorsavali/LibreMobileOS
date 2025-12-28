@@ -335,7 +335,7 @@
         </div>
         <div class="static">
           <div class="counter-section">
-            <div class="counter" data-target="250">1</div>
+            <div class="counter" id="latestVersionCounter" data-target="0" data-plus="true">0</div>
             <p>maintained devices</p>
           </div>
           <div class="counter-section">
@@ -545,7 +545,47 @@
   fetchActiveUsers();
 
 </script>
+<script>
+  async function fetchLatestVersionDevices() {
+    try {
+      const res = await fetch("https://get.libremobileos.com/api/v1/devices");
+      const data = await res.json();
+  
 
+      const versions = Object.keys(data);
+  
+      if (versions.length === 0) return;
+  
+    
+      versions.sort((a, b) => {
+        const [aMajor, aMinor] = a.split('.').map(Number);
+        const [bMajor, bMinor] = b.split('.').map(Number);
+        if (aMajor !== bMajor) return aMajor - bMajor;
+        return aMinor - bMinor;
+      });
+  
+      const latestVersion = versions[versions.length - 1];
+  
+    
+      const count = data[latestVersion].length;
+  
+     
+      const counter = document.getElementById("latestVersionCounter");
+      counter.setAttribute("data-target", count);
+  
+      
+      animateCounter(counter);
+  
+      console.log(`Latest version: ${latestVersion}, devices: ${count}`);
+  
+    } catch (err) {
+      console.error("Fetch error:", err);
+    }
+  }
+ 
+  fetchLatestVersionDevices();
+  </script>
+  
   <script>
     function animateCounter(counter) {
       const target = +counter.getAttribute("data-target");
