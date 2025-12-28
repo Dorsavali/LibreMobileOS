@@ -529,22 +529,23 @@
     rotate();
   </script>
   <script>
-    async function fetchActiveUsers() {
-      const res = await fetch(
-        "https://stats.libremobileos.com/api/v1/stats"
-      );
-  
-      const data = await res.json();
-      const total = data.users.total;
-  
-      document
-        .getElementById("activeUsersCounter")
-        .setAttribute("data-target", total);
-    }
-  
-    fetchActiveUsers();
-  </script>
-  
+  async function fetchActiveUsers() {
+    const res = await fetch(
+      "https://stats.libremobileos.com/api/v1/stats"
+    );
+
+    const data = await res.json();
+    const total = data.total;
+
+    document
+      .getElementById("activeUsersCounter")
+      .setAttribute("data-target", total);
+  }
+
+  fetchActiveUsers();
+
+</script>
+
   <script>
     function animateCounter(counter) {
       const target = +counter.getAttribute("data-target");
@@ -587,8 +588,32 @@
     counters.forEach((counter) => {
       observer.observe(counter);
     });
+    async function fetchActiveUsers() {
+  try {
+    const res = await fetch("https://stats.libremobileos.com/api/v1/stats");
+    const data = await res.json();
+
+
+    const total = data?.total || 0;
+
+
+    const counter = document.getElementById("activeUsersCounter");
+
+
+    counter.setAttribute("data-target", total);
+
+
+    animateCounter(counter);
+
+  } catch (err) {
+    console.error("Fetch error:", err);
+  }
+}
+
+fetchActiveUsers();
+    
   </script>
-  <script>
+<script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -604,7 +629,7 @@
         },
       },
     });
-  </script>
+</script>
 <script>
   const openDonateBtn = document.querySelector('.donateBtn button');
   const donateModal = document.getElementById('donateModal');
