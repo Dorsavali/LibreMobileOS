@@ -339,7 +339,10 @@
             <p>maintained devices</p>
           </div>
           <div class="counter-section">
-            <div class="counter" data-target="1587" data-plus="true">1</div>
+            <div    class="counter"
+            id="activeUsersCounter"
+            data-target="0"
+            data-plus="true">0</div>
             <p>active users</p>
           </div>
           <div class="counter-section">
@@ -525,6 +528,23 @@
 
     rotate();
   </script>
+  <script>
+    async function fetchActiveUsers() {
+      const res = await fetch(
+        "https://stats.libremobileos.com/api/v1/stats"
+      );
+  
+      const data = await res.json();
+      const total = data.users.total;
+  
+      document
+        .getElementById("activeUsersCounter")
+        .setAttribute("data-target", total);
+    }
+  
+    fetchActiveUsers();
+  </script>
+  
   <script>
     function animateCounter(counter) {
       const target = +counter.getAttribute("data-target");
