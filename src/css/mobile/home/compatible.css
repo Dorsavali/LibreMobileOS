@@ -87,10 +87,12 @@ box-sizing: border-box;
       .swiper-button-prev {
         width: 30px;
         height: 30px;
+        padding: 5px;
         background-color: white;
         border-color: lavender;
         border-radius: 50%;
         border: 1px solid lavender;
+        box-sizing: border-box;
         &::after {
           color: #424750;
           font-size: 12px;

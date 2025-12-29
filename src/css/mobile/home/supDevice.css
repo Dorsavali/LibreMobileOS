@@ -37,6 +37,7 @@ box-sizing: border-box;
         font-size: 18px;
         font-weight: 600;
         color: #1B1528;
+        text-align: center;
       }
       .text{
         font-family: Albert;
