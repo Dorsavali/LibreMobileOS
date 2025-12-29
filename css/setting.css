@@ -8,4 +8,5 @@ body{
 @font-face {
     font-family: Albert;
     src: url("../fonts/AlbertSans-VariableFont_wght.ttf");
+    font-display: swap;
 }
