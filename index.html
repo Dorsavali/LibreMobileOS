@@ -42,458 +42,500 @@
     <meta property="og:site_name" content="LibreMobileOS" />
   </head>
   <body>
-    <!-- start header-->
-    <div class="header">
-      <label for="show" class="hamburger">
-        <img src="./images/essentials/menu.svg" alt="Menu" />
-      </label>
-      <div class="topHeader">
-        <div class="mobileHeader">
-          <div class="info">
-            <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
-            LibreMobileOS
+    <main role="main">
+      <!-- start header-->
+      <div class="header">
+        <label for="show" class="hamburger">
+          <img src="./images/essentials/menu.svg" alt="Menu" />
+        </label>
+        <div class="topHeader">
+          <div class="mobileHeader">
+            <div class="info">
+              <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
+              LibreMobileOS
+            </div>
+            <div class="contactBtn">
+              <a href="https://get.libremobileos.com/">
+                <button>Download</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="radio" name="menu" id="show" />
+      <input type="radio" name="menu" id="close" />
+
+      <label for="close" class="backdrop"></label>
+      <header>
+        <div class="logo">
+          <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
+          LibreMobileOS
+        </div>
+        <div class="menuItems">
+          <div class="menu">
+            <nav role="navigation">
+              <ul>
+                <li class="active-item">
+                  <a href="./" class="disable-link active">Home</a>
+                </li>
+                <li>
+                  <a href="./legal.html">Legal</a>
+                </li>
+                <li>
+                  <a href="./lmodroid.html">LMODroid</a>
+                </li>
+                <li>
+                  <a href="./enterprise.html">Enterprise</a>
+                </li>
+                <li>
+                  <a href="./about.html">About</a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div class="contactBtn">
             <a href="https://get.libremobileos.com/">
               <button>Download</button>
             </a>
           </div>
+          <div class="donateBtn">
+            <a href="#">
+              <button>Donate</button>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <input type="radio" name="menu" id="show" />
-    <input type="radio" name="menu" id="close" />
+      </header>
+      <!-- end header-->
+      <!--modal start -->
+      <!-- Donate Modal -->
+      <div class="modal-overlay" id="donateModal">
+        <div class="donate-box">
+          <h1>Support LibreMobileOS ❤️</h1>
+          <p>
+            Your donations help us keep development open, free, and
+            community-driven. Donations cover only our server and infrastructure
+            costs.
+          </p>
 
-    <label for="close" class="backdrop"></label>
-    <header>
-      <div class="logo">
-        <img src="./images/LibreMobileOS (1) (1).svg" alt="Logo" />
-        LibreMobileOS
-      </div>
-      <div class="menuItems">
-        <div class="menu">
-          <nav>
-            <ul>
-              <li class="active-item">
-                <a href="./" class="disable-link active">Home</a>
-              </li>
-              <li>
-                <a href="./legal.html">Legal</a>
-              </li>
-              <li>
-                <a href="./lmodroid.html">LMODroid</a>
-              </li>
-              <li>
-                <a href="./enterprise.html">Enterprise</a>
-              </li>
-              <li>
-                <a href="./about.html">About</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="contactBtn">
-          <a href="https://get.libremobileos.com/">
-            <button>Download</button>
-          </a>
-        </div>
-        <div class="donateBtn">
-          <a href="#">
-            <button>Donate</button>
-          </a>
-        </div>
-      </div>
-    </header>
-    <!-- end header-->
-    <!--modal start -->
-    <!-- Donate Modal -->
-    <div class="modal-overlay" id="donateModal">
-      <div class="donate-box">
-        <h1>Support LibreMobileOS ❤️</h1>
-        <p>Your donations help us keep development open, free, and community-driven. Donations cover only our server and infrastructure costs.</p>
-    
-        <h2>💳 PayPal</h2>
-        <p>Donate securely via PayPal:</p>
-        <a href="https://paypal.me/khodeerfan" target="_blank" class="button">Donate via PayPal</a>
-    
-        <h2>💛 Liberapay</h2>
-        <p>Recurring or anonymous donations via Liberapay:</p>
-        <a href="https://liberapay.com/erfanoabdi/donate" target="_blank">
-          <img src="https://liberapay.com/assets/widgets/donate.svg" alt="Donate via Liberapay">
-        </a>
-    
-        <h2>🪙 Cryptocurrency</h2>
-        <div class="crypto">
-          <p><strong>Bitcoin (BTC):</strong> <code>12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa</code></p>
-          <div id="btc-qr" class="qr"></div>
-    
-          <p><strong>Ethereum (ETH / ERC20):</strong> <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code></p>
-          <div id="eth-qr" class="qr"></div>
-    
-          <p><strong>USDT (TRC20):</strong> <code>TLX6giNCmTbkqURcdSasuRTFUzYpntSegG</code></p>
-          <div id="usdt-trc-qr" class="qr"></div>
-    
-          <p><strong>USDT (BSC / ERC20):</strong> <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code></p>
-          <div id="usdt-bsc-qr" class="qr"></div>
-        </div>
-    
-        <h2>📱 UPI (India)</h2>
-        <div class="upi">
-          <p><strong>UPI ID:</strong> <code>dhinalogu@okhdfcbank</code></p>
-          <p>Tap or scan below to donate directly via UPI:</p>
-          <a href="upi://pay?pa=dhinalogu@okhdfcbank&pn=LibreMobileOS&cu=INR" class="button">Donate via UPI</a>
-          <div id="upi-qr" class="qr"></div>
-        </div>
-    
-        <p>Thank you for helping us make open-source better for everyone! 🙏</p>
-      </div>
-    </div>
-    <!-- End Donate Modal -->
+          <h2>💳 PayPal</h2>
+          <p>Donate securely via PayPal:</p>
+          <a href="https://paypal.me/khodeerfan" target="_blank" class="button"
+            >Donate via PayPal</a
+          >
 
-    <!--modal end-->
-    <!--start Lading-->
-    <div class="landing">
-      <div class="background">
-        <div class="bg">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="main">
-        <div class="text">
-          <div class="title">LibreMobileOS</div>
-          <div class="texts">
-            <div class="top">
-              <div class="items hover-underline" id="myItem">
-                Rich Featured Privacy
-              </div>
-              <div class="items hover-underline" id="myItem">
-                Focused Mobile OS
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="items hover-underline" id="myItem">
-                Enjoy Taste Of Liberty
-              </div>
-            </div>
-          </div>
-          <div class="buttons">
-            <a href="https://get.libremobileos.com/">
-              <button>
-                <span class="text">Download</span>
-              </button></a
-            >
-          </div>
-        </div>
-        <div class="mockup">
-          <img src="./images/essentials/final.svg" alt="mockup" />
-        </div>
-      </div>
-    </div>
-    <!--end Landing-->
-    <!--start supported devices-->
-    <div class="supDevice">
-      <div class="groupDevice">
-        <div class="device">
-          <div class="icon">
-            <img src="./images/Supported device/mobile2.svg" alt="mobile" />
-          </div>
-          <div class="title">Phone and Tablet</div>
-          <div class="text">Compatible with SmartPhone and Tablet</div>
-        </div>
-        <div class="device">
-          <div class="icon">
-            <img src="./images/Supported device/laptop.svg" alt="laptop" />
-          </div>
-          <div class="title">Computer</div>
-          <div class="text">Customized PC builds based on Android-X86</div>
-        </div>
-        <div class="device">
-          <div class="icon">
-            <img src="./images/Supported device/car.svg" alt="car" />
-          </div>
-          <div class="title">Automotive</div>
-          <div class="text">In-car Infotainment system</div>
-        </div>
-        <div class="device">
-          <div class="icon">
-            <img src="./images/Supported device/watch.svg" alt="Smartwatch" />
-          </div>
-          <div class="title">Smart Watch and IoT</div>
-          <div class="text">Supports IoT and wearable devices</div>
-        </div>
-        <div class="device">
-          <div class="icon">
-            <img src="./images/Supported device/tv.svg" alt="TV" />
-          </div>
-          <div class="title">TV</div>
-          <div class="text">Big Screen Compatible OS</div>
-        </div>
-      </div>
-    </div>
-    <!--end supported devices-->
-    <!--start features-->
-    <div class="features">
-      <div class="groupFeatures">
-        <div class="feature">
-          <div class="image">
-            <img src="./images/cards/Responsive-pana.svg" alt="MultiPlatform" />
-          </div>
-          <div class="title">Device Support</div>
-          <div class="description">
-            Wide range and expandable support of OTA update-able devices
-          </div>
-        </div>
-        <div class="feature">
-          <div class="image">
-            <img src="./images/cards/Update-cuate.svg" alt="UpToDate" />
-          </div>
-          <div class="title">Up To Date</div>
-          <div class="description">
-            Automated weekly builds synchronized with source code
-          </div>
-        </div>
-        <div class="feature">
-          <div class="image">
-            <img src="./images/cards/Open source-rafiki.svg" alt="OpenSource" />
-          </div>
-          <div class="title">Open Source</div>
-          <div class="description">
-            deGoogled privacy-enabled environment and fully customizable
-          </div>
-        </div>
-        <div class="feature">
-          <div class="image">
+          <h2>💛 Liberapay</h2>
+          <p>Recurring or anonymous donations via Liberapay:</p>
+          <a href="https://liberapay.com/erfanoabdi/donate" target="_blank">
             <img
-              src="./images/cards/Group Chat-amico.svg"
-              alt="Active Community"
+              src="https://liberapay.com/assets/widgets/donate.svg"
+              alt="Donate via Liberapay"
             />
-          </div>
-          <div class="title">Active Community</div>
-          <div class="description">
-            Device and platform developers around the world are maintaining
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end features-->
-    <!-- start statics-->
-    <div class="statics">
-      <div class="staticGroup">
-        <div class="texts">
-          <div class="items hover-underline" id="myItem">
-            Here are some statistics
-          </div>
-        </div>
-        <div class="static">
-          <div class="counter-section">
-            <div class="counter" id="latestVersionCounter" data-target="0" >0</div>
-            <p>maintained devices</p>
-          </div>
-          <div class="counter-section">
-            <div    class="counter"
-            id="activeUsersCounter"
-            data-target="0"
-            data-plus="true">0</div>
-            <p>active users</p>
-          </div>
-          <div class="counter-section">
-            <div class="counter" data-target="8">1</div>
-            <p>developers</p>
-          </div>
-          <div class="counter-section">
-            <div class="counter" data-target="1000" data-plus="true">1</div>
-            <p>community members</p>
-          </div>
-        </div>
-        <div class="media">
-          <div class="sites">
-            <a
-              href="https://git.libremobileos.com/users/sign_in"
-              class="active"
-            >
-              <img src="./images/media/gitlab.svg" alt="Gitlab" />
-              GitLab
-            </a>
-          </div>
-          <div class="sites">
-            <a href="https://jenkins.libremobileos.com/" class="active">
-              <img src="./images/media/jenkins.webp" alt="Jenkins" />
-              Jenkins
-            </a>
-          </div>
-          <div class="sites">
-            <a href="https://gerrit.libremobileos.com/" class="active">
-              <img src="./images/media/gerrit.png" alt="gerrit" />
-              Gerrit
-            </a>
-          </div>
-          <div class="sites">
-            <a href="https://stats.libremobileos.com/" class="active">
-              <img src="./images/essentials/plus.svg" alt="plus" />
-              More stats
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end statics-->
-    <!--start compatible-->
-    <div class="compatible">
-      <div class="texts">
-        <div class="items hover-underline" id="myItem">Compatible with</div>
-      </div>
-      <div class="compatible-container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/Allwinner.png" alt="logo" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img
-                  src="./images/compatible/Amlogic-Logo.wine.png"
-                  alt="logo"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/Broadcom.png" alt="logo" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/exynos.svg" alt="logo" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/intel.png" alt="logo" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/MediaTek.png" alt="logo" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/Qualcommpng.png" alt="logo" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image">
-                <img src="./images/compatible/rockchip.png" alt="logo" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-    </div>
-    <!--end compatible-->
-    <!--start footer-->
-    <footer>
-      <div class="footer">
-        <div class="left">
-          <div class="logo">
-            <img src="./images/footer/LibreMobileOSlogo.svg" alt="logo" />
-          </div>
-          <div class="name">LibreMobileOS</div>
-        </div>
-        <div class="right">
-          <div class="social">
-            <div class="mediaLink">
-              <a href="https://github.com/LibreMobileOS">
-                <img src="./images/footer/GitHub.svg" alt="linkdin" />
-              </a>
-            </div>
-            <div class="mediaLink">
-              <a href="https://www.linkedin.com/company/libremobileos">
-                <img src="./images/footer/Linkedin-logo.svg" alt="linkdin" />
-              </a>
-            </div>
-            <div class="mediaLink">
-              <a href="https://matrix.to/#/%23lmodroid:libremobileos.com">
-                <img src="./images/footer/Element-logo.svg" alt="matrix" />
-              </a>
-            </div>
-            <div class="mediaLink">
-              <a href="https://t.me/LMODroid">
-                <img src="./images/footer/telegram.svg" alt="telegram" />
-              </a>
-            </div>
-            <div class="mediaLink">
-              <a href="https://x.com/libremobileos">
-                <img src="./images/footer/X-logo.svg" alt="x" />
-              </a>
-            </div>
-          </div>
-          <div class="copyright">
-            © 2020-2025 LibreMobileOS . All Rights Reserved
-          </div>
-          <div class="designer">
-            Designed and developed by
-            <a href="https://github.com/Dorsavali">DorsaVali</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--end footer-->
-    <button id="scrollTopBtn" title="Go to top"><img src="./images/essentials/arrowUp.svg" alt="arrowUp"></button>
+          </a>
 
+          <h2>🪙 Cryptocurrency</h2>
+          <div class="crypto">
+            <p>
+              <strong>Bitcoin (BTC):</strong>
+              <code>12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa</code>
+            </p>
+            <div id="btc-qr" class="qr"></div>
+
+            <p>
+              <strong>Ethereum (ETH / ERC20):</strong>
+              <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code>
+            </p>
+            <div id="eth-qr" class="qr"></div>
+
+            <p>
+              <strong>USDT (TRC20):</strong>
+              <code>TLX6giNCmTbkqURcdSasuRTFUzYpntSegG</code>
+            </p>
+            <div id="usdt-trc-qr" class="qr"></div>
+
+            <p>
+              <strong>USDT (BSC / ERC20):</strong>
+              <code>0x220ee927da57bb117d9c887c4d5ed312a0270d06</code>
+            </p>
+            <div id="usdt-bsc-qr" class="qr"></div>
+          </div>
+
+          <h2>📱 UPI (India)</h2>
+          <div class="upi">
+            <p><strong>UPI ID:</strong> <code>dhinalogu@okhdfcbank</code></p>
+            <p>Tap or scan below to donate directly via UPI:</p>
+            <a
+              href="upi://pay?pa=dhinalogu@okhdfcbank&pn=LibreMobileOS&cu=INR"
+              class="button"
+              >Donate via UPI</a
+            >
+            <div id="upi-qr" class="qr"></div>
+          </div>
+
+          <p>
+            Thank you for helping us make open-source better for everyone! 🙏
+          </p>
+        </div>
+      </div>
+      <!-- End Donate Modal -->
+
+      <!--modal end-->
+      <!--start Lading-->
+      <div class="landing">
+        <div class="background">
+          <div class="bg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="main">
+          <div class="text">
+            <div class="title">LibreMobileOS</div>
+            <div class="texts">
+              <div class="top">
+                <div class="items hover-underline" id="myItem">
+                  Rich Featured Privacy
+                </div>
+                <div class="items hover-underline" id="myItem">
+                  Focused Mobile OS
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="items hover-underline" id="myItem">
+                  Enjoy Taste Of Liberty
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="https://get.libremobileos.com/">
+                <button>
+                  <span class="text">Download</span>
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="mockup">
+            <img src="./images/essentials/final.svg" alt="mockup" />
+          </div>
+        </div>
+      </div>
+      <!--end Landing-->
+      <!--start supported devices-->
+      <div class="supDevice">
+        <div class="groupDevice">
+          <div class="device">
+            <div class="icon">
+              <img src="./images/Supported device/mobile2.svg" alt="mobile" />
+            </div>
+            <div class="title">Phone and Tablet</div>
+            <div class="text">Compatible with SmartPhone and Tablet</div>
+          </div>
+          <div class="device">
+            <div class="icon">
+              <img src="./images/Supported device/laptop.svg" alt="laptop" />
+            </div>
+            <div class="title">Computer</div>
+            <div class="text">Customized PC builds based on Android-X86</div>
+          </div>
+          <div class="device">
+            <div class="icon">
+              <img src="./images/Supported device/car.svg" alt="car" />
+            </div>
+            <div class="title">Automotive</div>
+            <div class="text">In-car Infotainment system</div>
+          </div>
+          <div class="device">
+            <div class="icon">
+              <img src="./images/Supported device/watch.svg" alt="Smartwatch" />
+            </div>
+            <div class="title">Smart Watch and IoT</div>
+            <div class="text">Supports IoT and wearable devices</div>
+          </div>
+          <div class="device">
+            <div class="icon">
+              <img src="./images/Supported device/tv.svg" alt="TV" />
+            </div>
+            <div class="title">TV</div>
+            <div class="text">Big Screen Compatible OS</div>
+          </div>
+        </div>
+      </div>
+      <!--end supported devices-->
+      <!--start features-->
+      <div class="features">
+        <div class="groupFeatures">
+          <div class="feature">
+            <div class="image">
+              <img
+                src="./images/cards/Responsive-pana.svg"
+                alt="MultiPlatform"
+              />
+            </div>
+            <div class="title">Device Support</div>
+            <div class="description">
+              Wide range and expandable support of OTA update-able devices
+            </div>
+          </div>
+          <div class="feature">
+            <div class="image">
+              <img src="./images/cards/Update-cuate.svg" alt="UpToDate" />
+            </div>
+            <div class="title">Up To Date</div>
+            <div class="description">
+              Automated weekly builds synchronized with source code
+            </div>
+          </div>
+          <div class="feature">
+            <div class="image">
+              <img
+                src="./images/cards/Open source-rafiki.svg"
+                alt="OpenSource"
+              />
+            </div>
+            <div class="title">Open Source</div>
+            <div class="description">
+              deGoogled privacy-enabled environment and fully customizable
+            </div>
+          </div>
+          <div class="feature">
+            <div class="image">
+              <img
+                src="./images/cards/Group Chat-amico.svg"
+                alt="Active Community"
+              />
+            </div>
+            <div class="title">Active Community</div>
+            <div class="description">
+              Device and platform developers around the world are maintaining
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end features-->
+      <!-- start statics-->
+      <div class="statics">
+        <div class="staticGroup">
+          <div class="texts">
+            <div class="items hover-underline" id="myItem">
+              Here are some statistics
+            </div>
+          </div>
+          <div class="static">
+            <div class="counter-section">
+              <div class="counter" id="latestVersionCounter" data-target="0">
+                0
+              </div>
+              <p>maintained devices</p>
+            </div>
+            <div class="counter-section">
+              <div
+                class="counter"
+                id="activeUsersCounter"
+                data-target="0"
+                data-plus="true"
+              >
+                0
+              </div>
+              <p>active users</p>
+            </div>
+            <div class="counter-section">
+              <div class="counter" data-target="8">1</div>
+              <p>developers</p>
+            </div>
+            <div class="counter-section">
+              <div class="counter" data-target="1000" data-plus="true">1</div>
+              <p>community members</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="sites">
+              <a
+                href="https://git.libremobileos.com/users/sign_in"
+                class="active"
+              >
+                <img src="./images/media/gitlab.svg" alt="Gitlab" />
+                GitLab
+              </a>
+            </div>
+            <div class="sites">
+              <a href="https://jenkins.libremobileos.com/" class="active">
+                <img src="./images/media/jenkins.webp" alt="Jenkins" />
+                Jenkins
+              </a>
+            </div>
+            <div class="sites">
+              <a href="https://gerrit.libremobileos.com/" class="active">
+                <img src="./images/media/gerrit.png" alt="gerrit" />
+                Gerrit
+              </a>
+            </div>
+            <div class="sites">
+              <a href="https://stats.libremobileos.com/" class="active">
+                <img src="./images/essentials/plus.svg" alt="plus" />
+                More stats
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end statics-->
+      <!--start compatible-->
+      <div class="compatible">
+        <div class="texts">
+          <div class="items hover-underline" id="myItem">Compatible with</div>
+        </div>
+        <div class="compatible-container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/Allwinner.png" alt="logo" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img
+                    src="./images/compatible/Amlogic-Logo.wine.png"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/Broadcom.png" alt="logo" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/exynos.svg" alt="logo" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/intel.png" alt="logo" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/MediaTek.png" alt="logo" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/Qualcommpng.png" alt="logo" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./images/compatible/rockchip.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!--end compatible-->
+      <!--start footer-->
+      <footer>
+        <div class="footer">
+          <div class="left">
+            <div class="logo">
+              <img src="./images/footer/LibreMobileOSlogo.svg" alt="logo" />
+            </div>
+            <div class="name">LibreMobileOS</div>
+          </div>
+          <div class="right">
+            <div class="social">
+              <div class="mediaLink">
+                <a href="https://github.com/LibreMobileOS">
+                  <img src="./images/footer/GitHub.svg" alt="linkdin" />
+                </a>
+              </div>
+              <div class="mediaLink">
+                <a href="https://www.linkedin.com/company/libremobileos">
+                  <img src="./images/footer/Linkedin-logo.svg" alt="linkdin" />
+                </a>
+              </div>
+              <div class="mediaLink">
+                <a href="https://matrix.to/#/%23lmodroid:libremobileos.com">
+                  <img src="./images/footer/Element-logo.svg" alt="matrix" />
+                </a>
+              </div>
+              <div class="mediaLink">
+                <a href="https://t.me/LMODroid">
+                  <img src="./images/footer/telegram.svg" alt="telegram" />
+                </a>
+              </div>
+              <div class="mediaLink">
+                <a href="https://x.com/libremobileos">
+                  <img src="./images/footer/X-logo.svg" alt="x" />
+                </a>
+              </div>
+            </div>
+            <div class="copyright">
+              © 2020-2025 LibreMobileOS . All Rights Reserved
+            </div>
+            <div class="designer">
+              Designed and developed by
+              <a href="https://github.com/Dorsavali">DorsaVali</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--end footer-->
+      <button id="scrollTopBtn" title="Go to top">
+        <img src="./images/essentials/arrowUp.svg" alt="arrowUp" />
+      </button>
+    </main>
   </body>
   <script>
     const show = document.getElementById("show");
@@ -529,63 +571,54 @@
     rotate();
   </script>
   <script>
-  async function fetchActiveUsers() {
-    const res = await fetch(
-      "https://stats.libremobileos.com/api/v1/stats"
-    );
+    async function fetchActiveUsers() {
+      const res = await fetch("https://stats.libremobileos.com/api/v1/stats");
 
-    const data = await res.json();
-    const total = data.total;
-
-    document
-      .getElementById("activeUsersCounter")
-      .setAttribute("data-target", total);
-  }
-
-  fetchActiveUsers();
-
-</script>
-<script>
-  async function fetchLatestVersionDevices() {
-    try {
-      const res = await fetch("https://get.libremobileos.com/api/v1/devices");
       const data = await res.json();
-  
+      const total = data.total;
 
-      const versions = Object.keys(data);
-  
-      if (versions.length === 0) return;
-  
-    
-      versions.sort((a, b) => {
-        const [aMajor, aMinor] = a.split('.').map(Number);
-        const [bMajor, bMinor] = b.split('.').map(Number);
-        if (aMajor !== bMajor) return aMajor - bMajor;
-        return aMinor - bMinor;
-      });
-  
-      const latestVersion = versions[versions.length - 1];
-  
-    
-      const count = data[latestVersion].length;
-  
-     
-      const counter = document.getElementById("latestVersionCounter");
-      counter.setAttribute("data-target", count);
-  
-      
-      animateCounter(counter);
-  
-      console.log(`Latest version: ${latestVersion}, devices: ${count}`);
-  
-    } catch (err) {
-      console.error("Fetch error:", err);
+      document
+        .getElementById("activeUsersCounter")
+        .setAttribute("data-target", total);
     }
-  }
- 
-  fetchLatestVersionDevices();
+
+    fetchActiveUsers();
   </script>
-  
+  <script>
+    async function fetchLatestVersionDevices() {
+      try {
+        const res = await fetch("https://get.libremobileos.com/api/v1/devices");
+        const data = await res.json();
+
+        const versions = Object.keys(data);
+
+        if (versions.length === 0) return;
+
+        versions.sort((a, b) => {
+          const [aMajor, aMinor] = a.split(".").map(Number);
+          const [bMajor, bMinor] = b.split(".").map(Number);
+          if (aMajor !== bMajor) return aMajor - bMajor;
+          return aMinor - bMinor;
+        });
+
+        const latestVersion = versions[versions.length - 1];
+
+        const count = data[latestVersion].length;
+
+        const counter = document.getElementById("latestVersionCounter");
+        counter.setAttribute("data-target", count);
+
+        animateCounter(counter);
+
+        console.log(`Latest version: ${latestVersion}, devices: ${count}`);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    }
+
+    fetchLatestVersionDevices();
+  </script>
+
   <script>
     function animateCounter(counter) {
       const target = +counter.getAttribute("data-target");
@@ -629,31 +662,25 @@
       observer.observe(counter);
     });
     async function fetchActiveUsers() {
-  try {
-    const res = await fetch("https://stats.libremobileos.com/api/v1/stats");
-    const data = await res.json();
+      try {
+        const res = await fetch("https://stats.libremobileos.com/api/v1/stats");
+        const data = await res.json();
 
+        const total = data?.total || 0;
 
-    const total = data?.total || 0;
+        const counter = document.getElementById("activeUsersCounter");
 
+        counter.setAttribute("data-target", total);
 
-    const counter = document.getElementById("activeUsersCounter");
+        animateCounter(counter);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    }
 
-
-    counter.setAttribute("data-target", total);
-
-
-    animateCounter(counter);
-
-  } catch (err) {
-    console.error("Fetch error:", err);
-  }
-}
-
-fetchActiveUsers();
-    
+    fetchActiveUsers();
   </script>
-<script>
+  <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -669,86 +696,83 @@ fetchActiveUsers();
         },
       },
     });
-</script>
-<script>
-  const openDonateBtn = document.querySelector('.donateBtn button');
-  const donateModal = document.getElementById('donateModal');
-  const closeRadio = document.getElementById('close'); 
+  </script>
+  <script>
+    const openDonateBtn = document.querySelector(".donateBtn button");
+    const donateModal = document.getElementById("donateModal");
+    const closeRadio = document.getElementById("close");
 
-  openDonateBtn.addEventListener('click', (e) => {
-    e.preventDefault();
+    openDonateBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
+      if (closeRadio) closeRadio.checked = true;
+      document.body.style.overflow = "hidden";
 
-    if (closeRadio) closeRadio.checked = true;
-    document.body.style.overflow = "hidden";
+      donateModal.classList.add("active");
+    });
 
-    donateModal.classList.add('active');
-  });
-
-  // تابع بستن با fadeOut
-  function closeModal() {
-    donateModal.classList.add('fade-out');
-    setTimeout(() => {
-      donateModal.classList.remove('active', 'fade-out');
-      donateModal.style.display = 'none';
-    }, 300); // باید با مدت زمان انیمیشن fadeOut یکی باشه
-  }
-
-  donateModal.addEventListener('click', (e) => {
-    if (e.target === donateModal) {
-      donateModal.classList.remove('active');
-      document.body.style.overflow = "auto"; 
+    // تابع بستن با fadeOut
+    function closeModal() {
+      donateModal.classList.add("fade-out");
+      setTimeout(() => {
+        donateModal.classList.remove("active", "fade-out");
+        donateModal.style.display = "none";
+      }, 300); // باید با مدت زمان انیمیشن fadeOut یکی باشه
     }
-  });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {donateModal.classList.remove('active');
-    document.body.style.overflow = "auto";}
-  });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
-<script>
-  const qrData = {
-    "btc-qr": "bitcoin:12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa",
-    "eth-qr": "ethereum:0x220ee927da57bb117d9c887c4d5ed312a0270d06",
-    "usdt-trc-qr": "tron:TLX6giNCmTbkqURcdSasuRTFUzYpntSegG",
-    "usdt-bsc-qr": "ethereum:0x220ee927da57bb117d9c887c4d5ed312a0270d06",
-    "upi-qr": "upi://pay?pa=dhinalogu@okhdfcbank&pn=LibreMobileOS&cu=INR"
-  };
-  for (const id in qrData) {
-    const el = document.getElementById(id);
-    if (el) {
-      const qr = new QRious({
-        element: document.createElement('canvas'),
-        value: qrData[id],
-        size: 130
+    donateModal.addEventListener("click", (e) => {
+      if (e.target === donateModal) {
+        donateModal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        donateModal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+  <script>
+    const qrData = {
+      "btc-qr": "bitcoin:12RJbDLPDRKLXo4iqn9QWfZmMzLct8iUTa",
+      "eth-qr": "ethereum:0x220ee927da57bb117d9c887c4d5ed312a0270d06",
+      "usdt-trc-qr": "tron:TLX6giNCmTbkqURcdSasuRTFUzYpntSegG",
+      "usdt-bsc-qr": "ethereum:0x220ee927da57bb117d9c887c4d5ed312a0270d06",
+      "upi-qr": "upi://pay?pa=dhinalogu@okhdfcbank&pn=LibreMobileOS&cu=INR",
+    };
+    for (const id in qrData) {
+      const el = document.getElementById(id);
+      if (el) {
+        const qr = new QRious({
+          element: document.createElement("canvas"),
+          value: qrData[id],
+          size: 130,
+        });
+        el.appendChild(qr.element);
+      }
+    }
+  </script>
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    scrollBtn.style.display = "none";
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        scrollBtn.style.display = "flex";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
-      el.appendChild(qr.element);
-    }
-  }
-</script>
-<script>
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-scrollBtn.style.display = "none";
-
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) { 
-    scrollBtn.style.display = "flex"; 
-  } else {
-    scrollBtn.style.display = "none"; 
-  }
-});
-
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-
-
-</script>
-
+    });
+  </script>
 </html>
