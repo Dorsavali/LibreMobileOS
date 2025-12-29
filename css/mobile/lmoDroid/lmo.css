@@ -6,14 +6,12 @@
     margin-bottom: 20px;
     font-family: Albert;
   }
-
   .description {
     font-size: 16px;
     margin-bottom: 30px;
     color: #1b1528;
     font-family: Albert;
   }
-
   .features-menu {
     display: flex;
     justify-content: start;
@@ -33,7 +31,6 @@
       transition: transform 0.3s ease, opacity 0.3s ease;
       span {
         font-size: 16px;
-
         font-family: Albert;
         border: 1px solid #7956a6;
         border-radius: 41px;

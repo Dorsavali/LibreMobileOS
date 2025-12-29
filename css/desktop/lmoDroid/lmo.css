@@ -1,133 +1,59 @@
 .features-section {
   padding: 40px;
-  text-align: center;
-
   .main-title {
     font-size: 40px;
-    margin-bottom: 20px;
-    font-family: Albert;
   }
-
   .description {
     font-size: 20px;
-    margin-bottom: 30px;
-    color: #1b1528;
-    font-family: Albert;
   }
 
   .features-menu {
-    display: flex;
     justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
     margin-bottom: 30px;
     height: 100px;
     .feature-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      cursor: pointer;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-     
-    overflow-x: unset;
-    overflow-y: unset;
+      overflow-x: unset;
+      overflow-y: unset;
       span {
         font-size: 20px;
         margin-top: 5px;
-        font-family: Albert;
-        border: 1px solid #7956a6;
-        border-radius: 41px;
         padding: 20px 30px;
-        color: #1b1528;
-        transition: 300ms;
-
         &:hover {
-          background-color: #7956a6;
-          border: 1px solid #7956a6;
-          color: white;
         }
       }
 
       &.active {
-        transform: scale(1.1);
-        opacity: 1;
-
         span {
-          background-color: #7956a6;
-          color: #fff;
         }
       }
     }
   }
 
-  
   .feature-content {
-    display: none;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-    pointer-events: none;
     margin-top: unset;
-   h3{
-    width: 100%;
-    font-size: 50px;
-    font-family: Albert;
-    text-align: left;
-    color: #1b1528;
-    margin-bottom: 10px;
-   }
-   h5{
-    width: 100%;
-    font-size: 20px;
-    font-family: Albert;
-    font-weight: 400;
-    text-align: left;
-    color: #1b1528;
-    margin-bottom: 20px;
-   }
+    h3 {
+      font-size: 50px;
+    }
+    h5 {
+      font-size: 20px;
+    }
     &.active {
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: start; 
-      gap: 10px; 
-      opacity: 1;
-      transform: translateY(0);
     }
     .feature-block {
-      width: 260px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 20px;
-      transition: transform 0.4s ease, opacity 0.4s ease;
       img {
-        width: 100%;
-        max-width: 220px;
-        margin-bottom: 25px;
-        border-radius: 41px;
-
-        box-sizing: border-box;
       }
 
       h3 {
         font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 12px;
-        font-family: Albert;
-        color: #1b1528;
-        text-align: center;
       }
 
       p {
         font-size: 18px;
-        color: #555;
-        font-family: Albert;
-        line-height: 1.6;
       }
 
-      
       &:nth-child(even) .content-card {
-        flex-direction: row-reverse;
-        text-align: right;
       }
     }
   }
