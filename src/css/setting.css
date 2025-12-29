@@ -7,7 +7,7 @@ body{
 }
 @font-face {
     font-family: Albert;
-    src: url("../fonts/AlbertSans-Regular.woff");
-    src: url("../fonts/AlbertSans-Regular.woff2");
+    src: url("../../public/fonts/AlbertSans-Regular.woff");
+    src: url("../../public/fonts/AlbertSans-Regular.woff2");
     font-display: swap;
 }
