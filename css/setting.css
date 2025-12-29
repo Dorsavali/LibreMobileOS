@@ -1,13 +1,10 @@
 *{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 body{
     height: 100vh;
 }
-
-
 @font-face {
     font-family: Albert;
     src: url("../fonts/AlbertSans-VariableFont_wght.ttf");
