@@ -1,0 +1,53 @@
+.supDevice {
+  width: 100%;
+padding: 50px ;
+box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .groupDevice {
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 80px;
+    .device {
+      width: 200px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: center;
+      gap: 15px;
+      .icon {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img {
+          width: 35px;
+          height: 35px;
+
+        }
+      }
+      .title{
+        font-family: Albert;
+        font-size: 18px;
+        font-weight: 600;
+        color: #1B1528;
+        text-align: center;
+      }
+      .text{
+        font-family: Albert;
+        font-size: 14px;
+        font-weight: 400;
+        color: #1B1528;
+        text-transform: capitalize;
+        text-align: center;
+        line-height: 1.6;
+      }
+    }
+  }
+}

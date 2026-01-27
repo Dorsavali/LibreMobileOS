@@ -9,8 +9,7 @@
       href="./images/LibreMobileOS (1) (1).svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <meta
       name="description"
       content="LibreMobileOS is an open-source, privacy-respecting mobile operating system based on AOSP. It supports phones, tablets, desktops, TVs, and automotive systems — with features like desktop mode, microG, and a de-Googled environment."
@@ -329,7 +328,7 @@
             </div>
             <div class="title">Up To Date</div>
             <div class="description">
-              Automated weekly builds synchronized with source code
+              Automated monthly builds synchronized with source code
             </div>
           </div>
           <div class="feature">
@@ -412,7 +411,7 @@
             </div>
             <div class="sites">
               <a href="https://gerrit.libremobileos.com/" class="active">
-                <img src="./images/media/gerrit.png" alt="gerrit" />
+                <img src="./images/media/gerrit.webp" alt="gerrit" />
                 Gerrit
               </a>
             </div>
@@ -436,20 +435,20 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="image">
-                  <img src="./images/compatible/Allwinner.png" alt="logo" />
+                  <img src="./images/compatible/Allwinner.webp" alt="logo" />
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="image">
                   <img
-                    src="./images/compatible/Amlogic-Logo.wine.png"
+                    src="./images/compatible/Amlogic-Logo.wine.webp"
                     alt="logo"
                   />
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="image">
-                  <img src="./images/compatible/Broadcom.png" alt="logo" />
+                  <img src="./images/compatible/Broadcom.webp" alt="logo" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -459,22 +458,22 @@
               </div>
               <div class="swiper-slide">
                 <div class="image">
-                  <img src="./images/compatible/intel.png" alt="logo" />
+                  <img src="./images/compatible/intel.webp" alt="logo" />
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="image">
-                  <img src="./images/compatible/MediaTek.png" alt="logo" />
+                  <img src="./images/compatible/MediaTek.webp" alt="logo" />
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="image">
-                  <img src="./images/compatible/Qualcommpng.png" alt="logo" />
+                  <img src="./images/compatible/Qualcommpng.webp" alt="logo" />
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="image">
-                  <img src="./images/compatible/rockchip.png" alt="logo" />
+                  <img src="./images/compatible/rockchip.webp" alt="logo" />
                 </div>
               </div>
             </div>
@@ -536,7 +535,7 @@
         <img src="./images/essentials/arrowUp.svg" alt="arrowUp" />
       </button>
     </main>
-  </body>
+  <script type="module" src="./src/js/main.js"></script>
   <script>
     const show = document.getElementById("show");
     const close = document.getElementById("close");
@@ -548,7 +547,7 @@
       if (close.checked) document.body.style.overflow = "auto";
     });
   </script>
-  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script>
     window.addEventListener("load", function () {
       document.querySelectorAll(".hover-underline").forEach(function (el) {
@@ -775,4 +774,5 @@
       });
     });
   </script>
+  </body>
 </html>

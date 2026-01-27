@@ -1,0 +1,50 @@
+.compatible {
+  padding-top: 50px;
+  width: 100%;
+  height: 300px;
+  user-select: none;
+  .texts {
+    .items {
+    }
+    .hover-underline {
+    }
+
+    .hover-underline::after,
+    .hover-underline::before {
+    }
+
+    .hover-underline::before {
+    }
+
+    .hover-underline:hover::after,
+    .hover-underline:hover::before {
+    }
+    .hover-underline.active::after,
+    .hover-underline.active::before {
+    }
+  }
+  .compatible-container {
+    width: 95%;
+    height: 50%;
+    .swiper {
+    }
+
+    .swiper-slide {
+      border-right: 0.8px solid lavender;
+      .image {
+        img {
+        }
+      }
+    }
+
+    .swiper-slide img {
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      &::after {
+      }
+    }
+
+    
+  }
+}

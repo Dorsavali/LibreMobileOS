@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    height: 100vh;
+}
+@font-face {
+    font-family: Albert;
+    src: url("../../public/fonts/AlbertSans-Regular.woff");
+    src: url("../../public/fonts/AlbertSans-Regular.woff2");
+    font-display: swap;
+}
